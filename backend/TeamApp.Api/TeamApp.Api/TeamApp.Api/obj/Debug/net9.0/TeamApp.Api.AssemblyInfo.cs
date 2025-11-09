@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TeamApp.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e472cc34ae2e0d7dce06781ce7851574ecccbf1c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f6c77e39c510cee57768d8d1d0fb1175c6e593b7")]
 [assembly: System.Reflection.AssemblyProductAttribute("TeamApp.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TeamApp.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

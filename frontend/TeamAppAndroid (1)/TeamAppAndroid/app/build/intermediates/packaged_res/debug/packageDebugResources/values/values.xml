@@ -39,6 +39,13 @@
     <string name="notifications">Notifications</string>
     <string name="refresh"/>
     <string name="send"/>
+    <style name="BottomNavTextActive" parent="TextAppearance.AppCompat.Caption">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="BottomNavTextInactive" parent="TextAppearance.AppCompat.Caption">
+        <item name="android:textSize">11sp</item>
+    </style>
     <style name="Shape" parent="@style/Shape.Rounded.MD" ns1:ignore="ResourceCycle"/>
     <style name="Shape.Pill">
         <item name="cornerFamily">rounded</item>

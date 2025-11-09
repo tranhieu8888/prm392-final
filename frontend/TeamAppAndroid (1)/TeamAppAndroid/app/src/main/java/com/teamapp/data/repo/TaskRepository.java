@@ -37,7 +37,7 @@ public class TaskRepository {
     }
 
     public List<TaskDtos.TaskDto> fetchMy(@Nullable String status, int page, int pageSize) throws Exception {
-        Response<List<TaskDtos.TaskDto>> res = api.my(status, page, pageSize).execute();
+        Response<List<TaskDtos.TaskDto>> res = api.myTasks(status, page, pageSize).execute();
         if (!res.isSuccessful() || res.body() == null) throw new IOException("Không tải được danh sách task của tôi");
         return res.body();
     }

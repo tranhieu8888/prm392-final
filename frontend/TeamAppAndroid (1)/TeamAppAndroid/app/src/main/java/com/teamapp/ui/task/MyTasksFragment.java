@@ -11,6 +11,7 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.*;
 
+import com.google.android.material.chip.ChipGroup; // Import cần thiết
 import com.teamapp.App;
 import com.teamapp.R;
 import com.teamapp.data.api.TaskApi;
@@ -21,65 +22,84 @@ import java.util.concurrent.Executors;
 
 public class MyTasksFragment extends Fragment {
 
-    private RecyclerView rv;
-    private ProgressBar progress;
+    private RecyclerView rvTasks;
+    private ProgressBar progressBar;
     private TaskListAdapter adapter;
-    private TaskApi api;
+    private TaskApi taskApi;
+    private View root;
 
     @Nullable
     @Override
-    public View onCreateView(@NonNull LayoutInflater inf, @Nullable ViewGroup c, @Nullable Bundle b) {
-        return inf.inflate(R.layout.fragment_my_tasks, c, false);
+    public View onCreateView(@NonNull final LayoutInflater inflater, @Nullable final ViewGroup container, @Nullable final Bundle savedInstanceState) {
+        // Giả định layout đã đổi tên thành fragment_my_tasks.xml
+        return inflater.inflate(R.layout.fragment_my_tasks, container, false);
     }
 
     @Override
-    public void onViewCreated(@NonNull View v, @Nullable Bundle b) {
-        super.onViewCreated(v, b);
-        rv = v.findViewById(R.id.rvMyTasks);
-        progress = v.findViewById(R.id.progress);
+    public void onViewCreated(@NonNull final View view, @Nullable final Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
 
-        api = App.get().retrofit().create(TaskApi.class);
+        root = view; // Lưu root view để dễ dàng tìm kiếm sau này
+        rvTasks = view.findViewById(R.id.recyclerMyTasks); // Đổi tên ID RecyclerView
+        progressBar = view.findViewById(R.id.progress); // Giả định ID ProgressBar
+
+        // Khởi tạo các thành phần
+        taskApi = App.get().retrofit().create(TaskApi.class);
         adapter = new TaskListAdapter(new ArrayList<>(), this::openTask);
 
-        rv.setLayoutManager(new LinearLayoutManager(getContext()));
-        rv.setAdapter(adapter);
+        rvTasks.setLayoutManager(new LinearLayoutManager(getContext()));
+        rvTasks.setAdapter(adapter);
 
+        // Khởi tạo bộ lọc (Sử dụng ChipGroup)
+        setupStatusFilters(view);
+
+        // Tải task ban đầu (Mặc định không lọc)
         loadMyTasks(null);
-        v.findViewById(R.id.btnFilterAll).setOnClickListener(vv -> loadMyTasks(null));
-        v.findViewById(R.id.btnFilterTodo).setOnClickListener(vv -> loadMyTasks("ToDo"));
-        v.findViewById(R.id.btnFilterDoing).setOnClickListener(vv -> loadMyTasks("InProgress"));
-        v.findViewById(R.id.btnFilterDone).setOnClickListener(vv -> loadMyTasks("Done"));
     }
 
-    private void loadMyTasks(@Nullable String status) {
-        progress.setVisibility(View.VISIBLE);
+    private void setupStatusFilters(@NonNull View view) {
+        // Gán listener cho các nút (giả định đã chuyển sang Chip ID theo XML mới)
+        view.findViewById(R.id.chipGroupStatus).findViewById(R.id.chipPending).setOnClickListener(v -> loadMyTasks("Pending"));
+        view.findViewById(R.id.chipGroupStatus).findViewById(R.id.chipInProgress).setOnClickListener(v -> loadMyTasks("InProgress"));
+        view.findViewById(R.id.chipGroupStatus).findViewById(R.id.chipDone).setOnClickListener(v -> loadMyTasks("Done"));
+
+        // Thêm nút "Tất cả" nếu cần, hoặc mặc định loadMyTasks(null) đã là tất cả
+        // view.findViewById(R.id.chipAll).setOnClickListener(v -> loadMyTasks(null));
+    }
+
+    private void loadMyTasks(@Nullable final String status) {
+        if (progressBar != null) progressBar.setVisibility(View.VISIBLE);
+
+        // Chuyển sang Thread phụ để gọi API
         Executors.newSingleThreadExecutor().execute(() -> {
             try {
-                // /api/tasks/my?status=...
-                List<TaskDtos.TaskDto> data = api.my(status, 1, 100).execute().body();
-                if (data == null) data = Collections.emptyList();
-                final List<TaskDtos.TaskDto> list = data;
+                // Sử dụng tên hàm 'myTasks' cho rõ ràng hơn
+                final List<TaskDtos.TaskDto> data = taskApi.myTasks(status, 1, 100).execute().body();
+
+                // Trở lại UI Thread để cập nhật giao diện
                 requireActivity().runOnUiThread(() -> {
-                    progress.setVisibility(View.GONE);
+                    if (progressBar != null) progressBar.setVisibility(View.GONE);
+                    final List<TaskDtos.TaskDto> list = (data == null) ? Collections.emptyList() : data;
                     adapter.submit(list);
                 });
             } catch (Exception e) {
+                // Xử lý lỗi và hiển thị Toast trên UI Thread
                 requireActivity().runOnUiThread(() -> {
-                    progress.setVisibility(View.GONE);
-                    Toast.makeText(getContext(), "Không tải được tasks: " + e.getMessage(), Toast.LENGTH_SHORT).show();
+                    if (progressBar != null) progressBar.setVisibility(View.GONE);
+                    Toast.makeText(getContext(), "Không tải được tasks: " + e.getMessage(), Toast.LENGTH_LONG).show();
                 });
             }
         });
     }
 
-    private void openTask(TaskDtos.TaskDto t) {
-        Intent i = new Intent(requireContext(), TaskDetailActivity.class);
+    private void openTask(final TaskDtos.TaskDto t) {
+        final Intent i = new Intent(requireContext(), TaskDetailActivity.class);
         i.putExtra("taskId", t.id.toString());
         i.putExtra("taskTitle", t.title);
         startActivity(i);
     }
 
-    /* Adapter tối giản */
+    /* Adapter và ViewHolder (Không thay đổi, giữ nguyên) */
     static class TaskListAdapter extends RecyclerView.Adapter<TaskVH> {
         interface OnClick { void onClick(TaskDtos.TaskDto t); }
         private final List<TaskDtos.TaskDto> data;
