@@ -1,2 +1,64 @@
-backend/TeamApp.Api/.vs/
+# =========================
+# Visual Studio / .NET .gitignore
+# =========================
+
+# User-specific files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Visual Studio cache folders
 .vs/
+.vscode/
+.idea/
+*.slnx
+*.sqlite
+FileContentIndex/
+
+# Build results
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Tt]emp/
+[Tt]est[Rr]esults/
+
+# Package folders
+*.nupkg
+*.snupkg
+*.nuspec
+packages/
+*.cache/
+*.bak
+
+# Rider / Resharper
+_ReSharper*/
+*.DotSettings.user
+
+# .NET build artifacts
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# ASP.NET specific
+wwwroot/lib/
+App_Data/
+AppPackages/
+PublishProfiles/
+Generated\ Files/
+
+# Backup & temp files
+*.tmp
+*.bak
+*.log
+*.DS_Store
+Thumbs.db
+
+# JetBrains Rider
+.idea/
+*.sln.iml
+
+# Others
+node_modules/
+dist/
+coverage/
