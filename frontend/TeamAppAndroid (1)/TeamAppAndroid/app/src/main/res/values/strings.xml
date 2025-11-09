@@ -1,0 +1,19 @@
+<resources>
+  <string name="app_name">TeamApp</string>
+  <string name="send" />
+  <string name="chat" />
+  <string name="message" />
+    <string name="add_conversation" />
+  <string name="mark_read" />
+
+  <string name="mark_all" />
+  <string name="refresh" />
+
+  <string name="nav_projects">Projects</string>
+  <string name="nav_tasks">My Tasks</string>
+  <string name="nav_calendar">Calendar</string>
+  <string name="nav_search">Search</string>
+  <string name="nav_profile">Profile</string>
+  <string name="notifications">Notifications</string>
+
+</resources>

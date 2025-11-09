@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="TeamApp.Api/TeamApp.Api.csproj" />
+  <Project Path="TeamApp.Application/TeamApp.Application.csproj" Id="440e7ff3-ba61-423a-bb01-56c60d1d8635" />
+  <Project Path="TeamApp.Domain/TeamApp.Domain.csproj" Id="4d4db19e-b828-4d4b-b51e-64f7c64f553b" />
+  <Project Path="TeamApp.Infrastructure/TeamApp.Infrastructure.csproj" Id="49b4fb63-b80b-44ef-9a72-2864d5709e37" />
+</Solution>

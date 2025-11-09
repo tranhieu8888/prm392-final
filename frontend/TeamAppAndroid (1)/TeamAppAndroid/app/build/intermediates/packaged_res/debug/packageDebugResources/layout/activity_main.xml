@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rootCoordinator"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="false"
+    android:background="?android:colorBackground">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/design_appbar_top_padding"
+    android:fitsSystemWindows="true"
+    app:elevation="0dp">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        style="@style/Widget.Material3.Toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:fitsSystemWindows="true"
+        app:layout_scrollFlags="scroll|enterAlways"
+        app:title="@string/app_name"
+        app:navigationIconTint="?attr/colorOnSurface"
+        app:titleTextColor="?attr/colorOnSurface"
+        app:menu="@menu/menu_main_toolbar" />
+</com.google.android.material.appbar.AppBarLayout>
+
+
+<FrameLayout
+android:id="@+id/mainContainer"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:fitsSystemWindows="false"
+app:layout_behavior="@string/appbar_scrolling_view_behavior"
+android:paddingBottom="80dp" />
+
+    <!-- Bottom Navigation -->
+<com.google.android.material.bottomnavigation.BottomNavigationView
+android:id="@+id/bottomNavigation"
+android:layout_width="match_parent"
+android:layout_height="80dp"
+android:layout_gravity="bottom"
+android:background="@drawable/bg_bottom_nav"
+android:paddingTop="8dp"
+android:paddingBottom="16dp"
+android:fitsSystemWindows="true"
+app:itemIconTint="@color/selector_nav_color"
+app:itemTextColor="@color/selector_nav_color"
+app:labelVisibilityMode="labeled"
+app:menu="@menu/menu_main_bottom"
+app:elevation="8dp" />
+
+
+<View
+android:id="@+id/bottomScrim"
+android:layout_width="match_parent"
+android:layout_height="8dp"
+android:layout_gravity="bottom"
+android:background="@drawable/scrim_top" />
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>

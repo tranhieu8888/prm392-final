@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net9.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\TeamApp.Domain\TeamApp.Domain.csproj" />
+		<ProjectReference Include="..\TeamApp.Infrastructure\TeamApp.Infrastructure.csproj" />
+	</ItemGroup>
+
+</Project>

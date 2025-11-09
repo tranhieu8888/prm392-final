@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <drawable name="ic_check_24" />
+    <drawable name="ic_mark_email_read_24" />
+    <drawable name="ic_dot_10" />
+    <drawable name="ic_refresh_24" />
+    <drawable name="bg_bottom_nav" />
+
+    <drawable name="ic_tasks" />
+    <drawable name="ic_calendar" />
+    <drawable name="ic_search" />
+    <drawable name="ic_profile" />
+</resources>
