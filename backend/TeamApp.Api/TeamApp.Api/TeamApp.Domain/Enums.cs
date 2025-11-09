@@ -9,7 +9,7 @@ namespace TeamApp.Domain
     public enum ProjectRole { Manager, Member }
 
     public enum TaskStatus { TODO, IN_PROGRESS, IN_REVIEW, DONE }
-
+    public enum ProjectStatus { TODO, IN_PROGRESS, IN_REVIEW, DONE }
     public enum ConversationType { Group, DM }
 
     public enum JoinStatus { PENDING, APPROVED, REJECTED }

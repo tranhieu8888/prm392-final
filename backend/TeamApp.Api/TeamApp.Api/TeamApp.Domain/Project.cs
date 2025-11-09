@@ -13,7 +13,7 @@ public class Project
     public string? Description { get; set; }
 
     public bool IsPublic { get; set; } = false;
-
+    public ProjectStatus Status { get; set; } = ProjectStatus.TODO;
     public Guid CreatedBy { get; set; }
     public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
     public DateTime? UpdatedAt { get; set; }

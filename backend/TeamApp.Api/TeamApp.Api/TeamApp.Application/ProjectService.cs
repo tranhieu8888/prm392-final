@@ -12,17 +12,17 @@ public class ProjectService
 
     public async Task<ProjectDto> CreateAsync(Guid me, CreateProjectRequest req)
     {
-        var p = new Project { Name = req.Name, Description = req.Description, IsPublic = req.IsPublic, CreatedBy = me };
+        var p = new Project { Name = req.Name, Description = req.Description, IsPublic = req.IsPublic, CreatedBy = me , Status= req.ProjectStatus};
         _db.Projects.Add(p);
         _db.ProjectMembers.Add(new ProjectMember { Project = p, UserId = me, Role = ProjectRole.Manager });
         await _db.SaveChangesAsync();
-        return new ProjectDto(p.Id, p.Name, p.Description, p.IsPublic, p.CreatedAt);
+        return new ProjectDto(p.Id, p.Name, p.Description, p.IsPublic, p.CreatedAt, p.Status);
     }
 
     public Task<List<ProjectDto>> MyAsync(Guid me) =>
         _db.ProjectMembers.Where(pm => pm.UserId == me)
           .Select(pm => pm.Project).OrderByDescending(p => p.CreatedAt)
-          .Select(p => new ProjectDto(p.Id, p.Name, p.Description, p.IsPublic, p.CreatedAt))
+          .Select(p => new ProjectDto(p.Id, p.Name, p.Description, p.IsPublic, p.CreatedAt, p.Status))
           .ToListAsync();
 
     public Task<List<MemberDto>> MembersAsync(Guid projectId) =>
@@ -43,6 +43,6 @@ public class ProjectService
     public Task<List<ProjectDto>> DiscoverAsync(Guid me, string? q) =>
         _db.Projects.Where(p => p.IsPublic && (q == null || p.Name.Contains(q)))
           .OrderByDescending(p => p.CreatedAt)
-          .Select(p => new ProjectDto(p.Id, p.Name, p.Description, p.IsPublic, p.CreatedAt))
+          .Select(p => new ProjectDto(p.Id, p.Name, p.Description, p.IsPublic, p.CreatedAt,p.Status))
           .ToListAsync();
 }

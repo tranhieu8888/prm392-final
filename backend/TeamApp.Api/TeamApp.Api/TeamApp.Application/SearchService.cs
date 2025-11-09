@@ -24,7 +24,7 @@ namespace TeamApp.Application
                 .Where(pm => pm.UserId == me && pm.Project.Name.Contains(q))
                 .Select(pm => pm.Project)
                 .OrderByDescending(p => p.CreatedAt)
-                .Select(p => new ProjectDto(p.Id, p.Name, p.Description, p.IsPublic, p.CreatedAt))
+                .Select(p => new ProjectDto(p.Id, p.Name, p.Description, p.IsPublic, p.CreatedAt, p.Status))
                 .Take(20).ToListAsync();
 
             var tasks = await _db.Tasks

@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using TeamApp.Domain;
 
 namespace TeamApp.Application
 {
@@ -10,8 +11,8 @@ namespace TeamApp.Application
     public record AuthResponse(string Token, UserDto User);
 
     // ===== Projects =====
-    public record CreateProjectRequest(string Name, string? Description, bool IsPublic);
-    public record ProjectDto(Guid Id, string Name, string? Description, bool IsPublic, DateTime CreatedAt);
+    public record CreateProjectRequest(string Name, string? Description, bool IsPublic,ProjectStatus ProjectStatus);
+    public record ProjectDto(Guid Id, string Name, string? Description, bool IsPublic, DateTime CreatedAt,ProjectStatus ProjectStatus);
 
     // ===== Members =====
     public record MemberDto(Guid UserId, string FullName, string Email, string? AvatarUrl, string Role);
