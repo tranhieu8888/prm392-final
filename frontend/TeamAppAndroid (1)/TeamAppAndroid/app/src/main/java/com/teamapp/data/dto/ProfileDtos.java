@@ -1,4 +1,3 @@
-// com/teamapp/data/dto/ProfileDtos.java
 package com.teamapp.data.dto;
 
 import java.util.UUID;

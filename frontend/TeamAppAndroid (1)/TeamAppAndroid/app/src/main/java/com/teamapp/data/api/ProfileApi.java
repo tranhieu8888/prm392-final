@@ -1,12 +1,15 @@
-// com/teamapp/data/api/ProfileApi.java
 package com.teamapp.data.api;
 
 import com.teamapp.data.dto.ProfileDtos;
 
+import okhttp3.MultipartBody;
 import retrofit2.Call;
 import retrofit2.http.Body;
 import retrofit2.http.GET;
+import retrofit2.http.Multipart;
 import retrofit2.http.PUT;
+import retrofit2.http.POST;
+import retrofit2.http.Part;
 
 public interface ProfileApi {
 

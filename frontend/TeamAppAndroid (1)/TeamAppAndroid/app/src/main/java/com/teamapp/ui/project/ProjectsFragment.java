@@ -70,6 +70,10 @@ public class ProjectsFragment extends Fragment {
                 startActivity(new Intent(requireContext(), CreateProjectActivity.class))
         );
 
+        v.findViewById(R.id.fabExplore).setOnClickListener(view ->
+                startActivity(new Intent(requireContext(), DiscoverProjectsActivity.class))
+        );
+
         loadMyProjects();
     }
 

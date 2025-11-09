@@ -14,6 +14,7 @@ import androidx.core.view.WindowInsetsCompat;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
+import com.google.android.material.appbar.MaterialToolbar;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.teamapp.R;
 import com.teamapp.ui.calendar.CalendarFragment;
@@ -46,19 +47,25 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        // --- Thêm đoạn này ---
+        MaterialToolbar toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+        // Nếu bạn muốn đặt tiêu đề từ code
+        getSupportActionBar().setTitle("TeamApp");
+        // ----------------------
+
         // Edge-to-edge
         WindowCompat.setDecorFitsSystemWindows(getWindow(), false);
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.rootCoordinator), (v, insets) -> {
             Insets sysBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            // Toolbar xuống dưới status bar
-            View toolbar = findViewById(R.id.toolbar);
-            toolbar.setPadding(
-                    toolbar.getPaddingLeft(),
-                    toolbar.getPaddingTop() + sysBars.top,
-                    toolbar.getPaddingRight(),
-                    toolbar.getPaddingBottom()
+            View toolbarView = findViewById(R.id.toolbar);
+            toolbarView.setPadding(
+                    toolbarView.getPaddingLeft(),
+                    toolbarView.getPaddingTop() + sysBars.top,
+                    toolbarView.getPaddingRight(),
+                    toolbarView.getPaddingBottom()
             );
-            // Bottom nav nâng lên khỏi navigation bar
             View bottom = findViewById(R.id.bottomNavigation);
             bottom.setPadding(
                     bottom.getPaddingLeft(),
@@ -68,6 +75,7 @@ public class MainActivity extends AppCompatActivity {
             );
             return insets;
         });
+
 
         bottomNav = findViewById(R.id.bottomNavigation);
 
