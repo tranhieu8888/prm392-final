@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.project.DiscoverProjectsActivity">
+
+    <TextView
+        android:id="@+id/activityTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Explorer project"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:padding="16dp"
+        android:gravity="center_horizontal"
+        android:layout_alignParentTop="true"/>
+
+    <LinearLayout
+        android:id="@+id/searchContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="12dp"
+        android:gravity="center_vertical"
+        android:layout_below="@+id/activityTitle">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            style="@style/Widget.Material3.TextInputLayout.OutlinedBox"> <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtSearch"
+            android:hint="Search project public…"
+            android:imeOptions="actionSearch"
+            android:maxLines="1"
+            android:inputType="text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <ImageButton
+            android:id="@+id/btnSearch"
+            android:layout_marginStart="8dp"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:padding="12dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Tìm kiếm dự án"
+            android:src="@drawable/ic_search_24"/> </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvProjects"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/searchContainer"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:paddingTop="8dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/item_project_discover"/>
+
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/tvEmptyState"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Không tìm thấy dự án công khai nào."
+        android:gravity="center"
+        android:padding="32dp"
+        android:visibility="gone"/>
+
+</RelativeLayout>

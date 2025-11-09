@@ -39,7 +39,7 @@
     <string name="notifications">Notifications</string>
     <string name="refresh"/>
     <string name="send"/>
-    <style name="Shape" parent="@style/Shape.Rounded.MD" ns1:ignore="ResourceCycle"/>
+    <style name="Shape" ns1:ignore="ResourceCycle" parent="@style/Shape.Rounded.MD"/>
     <style name="Shape.Pill">
         <item name="cornerFamily">rounded</item>
         <item name="cornerSize">50%</item>

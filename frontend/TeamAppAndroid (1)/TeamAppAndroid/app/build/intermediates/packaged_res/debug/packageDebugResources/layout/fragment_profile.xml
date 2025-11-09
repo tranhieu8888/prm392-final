@@ -12,13 +12,40 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <ImageView
-            android:id="@+id/imgAvatar"
+        <FrameLayout
+            android:id="@+id/avatarContainer"
             android:layout_width="96dp"
             android:layout_height="96dp"
-            android:src="@drawable/ic_profile"
+            android:layout_gravity="center_horizontal"
+            android:clickable="true"
+            android:focusable="true">
+
+            <!-- Ảnh avatar -->
+            <ImageView
+                android:id="@+id/imgAvatar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_profile_default"
+            android:background="@drawable/avatar_bg"
             android:contentDescription="@string/nav_profile"
-            android:padding="8dp"/>
+            android:scaleType="centerCrop"
+            android:padding="4dp"
+            android:layout_gravity="center"/>
+
+            <!-- Overlay icon camera -->
+            <ImageView
+                android:id="@+id/imgEditOverlay"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_gravity="bottom|end"
+                android:layout_margin="4dp"
+                android:background="@drawable/circle_white_bg"
+                android:padding="6dp"/>
+<!--                android:src="@drawable/ic_camera"-->
+
+        </FrameLayout>
+
+
 
         <TextView
             android:id="@+id/tvName"
@@ -44,18 +71,10 @@
 
             <Button
                 android:id="@+id/btnChangePass"
-                android:layout_width="0dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
                 android:text="Đổi mật khẩu"/>
 
-            <Button
-                android:id="@+id/btnRefresh"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
-                android:layout_weight="1"
-                android:text="Làm mới"/>
         </LinearLayout>
 
         <Button

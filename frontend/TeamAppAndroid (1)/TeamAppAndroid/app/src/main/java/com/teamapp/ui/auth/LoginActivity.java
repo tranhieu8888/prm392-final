@@ -35,7 +35,7 @@ public class LoginActivity extends AppCompatActivity {
 
         repo = ServiceLocator.auth();
 
-        // ✅ Chỉ auto vào Projects nếu TOKEN CÒN HẠN
+        //  Chỉ auto vào Projects nếu TOKEN CÒN HẠN
         if (ServiceLocator.session().hasValidToken()) {
             startActivity(new Intent(this, com.teamapp.ui.main.MainActivity.class));
             finish();
@@ -54,6 +54,11 @@ public class LoginActivity extends AppCompatActivity {
 
         if (TextUtils.isEmpty(email) || TextUtils.isEmpty(pass)) {
             Toast.makeText(this, "Vui lòng nhập email và mật khẩu", Toast.LENGTH_SHORT).show();
+            return;
+        }
+
+        if (!android.util.Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
+            Toast.makeText(this, "Email không hợp lệ. Vui lòng kiểm tra lại", Toast.LENGTH_SHORT).show();
             return;
         }
 
