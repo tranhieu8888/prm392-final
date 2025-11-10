@@ -65,12 +65,21 @@ public class RegisterActivity extends AppCompatActivity {
         String pass = edtPassword.getText().toString().trim();
         String confirm = edtConfirm.getText().toString().trim();
 
+        // 1. Kiểm tra trống
         if (TextUtils.isEmpty(name) || TextUtils.isEmpty(email) || TextUtils.isEmpty(pass)) {
             Toast.makeText(this, "Vui lòng nhập đầy đủ thông tin", Toast.LENGTH_SHORT).show();
             return;
         }
+
+        // 2. Kiểm tra khớp mật khẩu
         if (!pass.equals(confirm)) {
             Toast.makeText(this, "Mật khẩu xác nhận không khớp", Toast.LENGTH_SHORT).show();
+            return;
+        }
+
+        // 3. Kiểm tra định dạng email (BỔ SUNG)
+        if (!android.util.Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
+            Toast.makeText(this, "Định dạng email không hợp lệ", Toast.LENGTH_SHORT).show();
             return;
         }
 

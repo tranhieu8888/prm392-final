@@ -3244,6 +3244,7 @@ id accessibility_custom_action_6
 id accessibility_custom_action_7
 id accessibility_custom_action_8
 id accessibility_custom_action_9
+id actionBar
 id actionDown
 id actionDownUp
 id actionUp
@@ -3317,10 +3318,16 @@ id btnLogin
 id btnLogout
 id btnMark
 id btnMarkAll
+id btnOpenCalendar
+id btnOpenChat
+id btnOpenKanban
 id btnPending
+id btnPickAssignees
 id btnPickDate
+id btnPickDue
 id btnRefresh
 id btnRegister
+id btnSaveStatus
 id btnSearch
 id btnSend
 id buttonPanel
@@ -3692,6 +3699,7 @@ id snackbar_text
 id snap
 id snapMargins
 id south
+id spStatus
 id spacer
 id special_effects_controller_view_tag
 id spline
@@ -3769,10 +3777,12 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id triangle
+id tvAssignees
 id tvBody
 id tvCreated
 id tvDate
 id tvDesc
+id tvDue
 id tvEmail
 id tvLastMessage
 id tvLogin

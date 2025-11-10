@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="http://schemas.android.com/tools">
+    <color name="black_12">#1F000000</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorBackground">#FAFAFA</color>
+    <color name="colorDivider">#BDBDBD</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorTextPrimary">#212121</color>
+    <color name="colorTextSecondary">#757575</color>
+    <color name="color_primary">#6750A4</color>
+    <color name="purple_500"/>
+    <color name="selector_nav_color"/>
+    <dimen name="design_appbar_top_padding"/>
+    <dimen name="spacing_12">12dp</dimen>
+    <dimen name="spacing_16">16dp</dimen>
+    <dimen name="spacing_20">20dp</dimen>
+    <dimen name="spacing_24">24dp</dimen>
+    <drawable name="bg_bottom_nav"/>
+    <drawable name="ic_calendar"/>
+    <drawable name="ic_check_24"/>
+    <drawable name="ic_dot_10"/>
+    <drawable name="ic_mark_email_read_24"/>
+    <drawable name="ic_profile"/>
+    <drawable name="ic_refresh_24"/>
+    <drawable name="ic_search"/>
+    <drawable name="ic_tasks"/>
+    <string name="add_conversation"/>
+    <string name="app_name">TeamApp</string>
+    <string name="chat"/>
+    <string name="mark_all"/>
+    <string name="mark_read"/>
+    <string name="message"/>
+    <string name="nav_calendar">Calendar</string>
+    <string name="nav_profile">Profile</string>
+    <string name="nav_projects">Projects</string>
+    <string name="nav_search">Search</string>
+    <string name="nav_tasks">My Tasks</string>
+    <string name="notifications">Notifications</string>
+    <string name="refresh"/>
+    <string name="send"/>
+    <style name="Shape" parent="@style/Shape.Rounded.MD" ns1:ignore="ResourceCycle"/>
+    <style name="Shape.Pill">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+    <style name="Shape.RoundCornerFull">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+    <style name="Shape.RoundCornerMedium" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">16dp</item>
+    </style>
+    <style name="Shape.Rounded">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">12dp</item>
+    </style>
+    <style name="Shape.Rounded.LG">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">16dp</item>
+    </style>
+    <style name="Shape.Rounded.MD">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">12dp</item>
+    </style>
+    <style name="Shape.Rounded.SM">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">8dp</item>
+    </style>
+    <style name="ShapeAppearance.BottomNav" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopLeft">20dp</item>
+        <item name="cornerSizeTopRight">20dp</item>
+        <item name="cornerSizeBottomLeft">0dp</item>
+        <item name="cornerSizeBottomRight">0dp</item>
+    </style>
+    <style name="Theme.TeamApp" parent="Theme.Material3.Light.NoActionBar">
+        <item name="colorPrimary">@color/color_primary</item>
+        <item name="android:statusBarColor">@color/color_primary</item>
+    </style>
+</resources>
