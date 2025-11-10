@@ -51,6 +51,12 @@ public class MyTasksFragment extends Fragment {
         v.findViewById(R.id.btnFilterDone).setOnClickListener(vv -> loadMyTasks("Done"));
     }
 
+    @Override
+    public void onResume() {
+        super.onResume();
+        loadMyTasks(null);
+    }
+
     private void loadMyTasks(@Nullable String status) {
         progress.setVisibility(View.VISIBLE);
         Executors.newSingleThreadExecutor().execute(() -> {

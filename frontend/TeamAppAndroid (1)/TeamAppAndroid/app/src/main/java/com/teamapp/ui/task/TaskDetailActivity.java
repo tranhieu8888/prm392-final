@@ -24,8 +24,8 @@ import java.util.concurrent.Executors;
 public class TaskDetailActivity extends AppCompatActivity {
 
     private TextView tvTitle, tvDesc, tvStatus;
-    private Spinner spStatus;           // NEW
-    private Button btnSaveStatus;       // NEW
+    private Spinner spStatus;
+    private Button btnSaveStatus;
     private TabLayout tab;
     private LinearLayout tabInfo, tabComments;
     private RecyclerView rvComments;
@@ -36,8 +36,11 @@ public class TaskDetailActivity extends AppCompatActivity {
     private UUID taskId;
     private TaskDao taskDao;
     private CommentRepository comments;
-    private TaskRepository tasks;       // NEW
+    private TaskRepository tasks;
     private CommentAdapter adapter;
+
+    // Biến để lưu trữ lựa chọn status của Spinner, tránh bị loadTaskFromRoom() ghi đè
+    private String spinnerSelection = null;
 
     @Override protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -46,8 +49,8 @@ public class TaskDetailActivity extends AppCompatActivity {
         tvTitle = findViewById(R.id.tvTitle);
         tvDesc  = findViewById(R.id.tvDesc);
         tvStatus= findViewById(R.id.tvStatus);
-        spStatus = findViewById(R.id.spStatus);       // NEW
-        btnSaveStatus = findViewById(R.id.btnSaveStatus); // NEW
+        spStatus = findViewById(R.id.spStatus);
+        btnSaveStatus = findViewById(R.id.btnSaveStatus);
         tab     = findViewById(R.id.tabLayout);
         tabInfo = findViewById(R.id.tabInfo);
         tabComments = findViewById(R.id.tabComments);
@@ -61,13 +64,26 @@ public class TaskDetailActivity extends AppCompatActivity {
 
         taskDao  = App.get().db().taskDao();
         comments = new CommentRepository(App.get().retrofit(), App.get().db());
-        tasks    = new TaskRepository(App.get().retrofit(), App.get().db()); // NEW
+        tasks    = new TaskRepository(App.get().retrofit(), App.get().db());
 
         // Status spinner
+        // Giả sử bạn đã sửa C# Enum thành 'InProgress' (không có gạch dưới)
         ArrayAdapter<String> stAdapter = new ArrayAdapter<>(
                 this, android.R.layout.simple_spinner_dropdown_item,
-                Arrays.asList("ToDo", "InProgress", "Done"));
+                Arrays.asList("ToDo", "InProgress", "Done")); // <-- Nếu C# là IN_PROGRESS, bạn phải sửa đây
         spStatus.setAdapter(stAdapter);
+
+        // Lưu lại lựa chọn của người dùng khi họ nhấn spinner
+        spStatus.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                spinnerSelection = (String) parent.getItemAtPosition(position);
+            }
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+                spinnerSelection = null;
+            }
+        });
 
         btnSaveStatus.setOnClickListener(v -> saveStatus());
 
@@ -105,10 +121,14 @@ public class TaskDetailActivity extends AppCompatActivity {
                     tvDesc.setText(e.description == null ? "" : e.description);
                     String st = e.status == null ? "ToDo" : e.status;
                     tvStatus.setText("Status: " + st);
+
                     // set spinner selection
-                    if ("Done".equalsIgnoreCase(st)) spStatus.setSelection(2);
-                    else if ("InProgress".equalsIgnoreCase(st)) spStatus.setSelection(1);
-                    else spStatus.setSelection(0);
+                    // Chỉ đặt lại lựa chọn spinner nếu người dùng CHƯA chọn
+                    if (spinnerSelection == null) {
+                        if ("Done".equalsIgnoreCase(st)) spStatus.setSelection(2);
+                        else if ("InProgress".equalsIgnoreCase(st)) spStatus.setSelection(1);
+                        else spStatus.setSelection(0);
+                    }
                 } else {
                     tvDesc.setText("(Không tìm thấy task trong bộ nhớ cục bộ)");
                 }
@@ -151,17 +171,35 @@ public class TaskDetailActivity extends AppCompatActivity {
         });
     }
 
-    /** NEW: lưu status (không đổi position) */
+    /** SỬA LỖI STALE STATE (TRẠNG THÁI CŨ) */
     private void saveStatus() {
-        String status = (String) spStatus.getSelectedItem(); // ToDo | InProgress | Done
+        // Lấy status từ biến lưu trữ lựa chọn của spinner
+        String status = spinnerSelection;
+        if (status == null) {
+            // Nếu vì lý do nào đó mà null, lấy từ vị trí đang chọn
+            status = (String) spStatus.getSelectedItem();
+        }
+
         progress.setVisibility(View.VISIBLE);
+
+        // Biến status cuối cùng để dùng trong lambda (phải là final hoặc effectively final)
+        final String statusToSave = status;
         Executors.newSingleThreadExecutor().execute(() -> {
             try {
-                tasks.updateStatus(taskId, status);
+                // 1. Cập nhật dữ liệu (trên server và trong Room DB)
+                tasks.updateStatus(taskId, statusToSave);
+
+                // 2. Quay lại Main thread để cập nhật UI
                 runOnUiThread(() -> {
                     progress.setVisibility(View.GONE);
-                    tvStatus.setText("Status: " + status);
                     Toast.makeText(this, "Đã cập nhật trạng thái", Toast.LENGTH_SHORT).show();
+
+                    // ===== SỬA LỖI (STALE STATE) =====
+                    // Thay vì tự 'setText', hãy gọi hàm loadTaskFromRoom()
+                    // để tải lại TOÀN BỘ dữ liệu mới nhất từ CSDL (Room)
+                    // và cập nhật lại tất cả UI (cả Spinner và TextView).
+                    loadTaskFromRoom();
+                    // tvStatus.setText("Status: " + status); // <-- Xóa dòng cũ này
                 });
             } catch (Exception e) {
                 runOnUiThread(() -> {

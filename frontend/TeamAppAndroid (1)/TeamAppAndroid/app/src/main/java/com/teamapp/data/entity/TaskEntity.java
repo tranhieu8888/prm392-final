@@ -19,7 +19,7 @@ public class TaskEntity {
     public String title;
     public String description;
     public String status;   // "TODO","DOING","REVIEW","DONE"
-    public double position; // dùng cho sắp xếp trong cột
+    public Double position; // dùng cho sắp xếp trong cột
     public Date dueDate;
     public Date updatedAt;
 }

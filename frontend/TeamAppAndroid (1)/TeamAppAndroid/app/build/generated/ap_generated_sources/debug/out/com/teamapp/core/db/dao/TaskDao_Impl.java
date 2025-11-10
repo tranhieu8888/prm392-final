@@ -80,7 +80,11 @@ public final class TaskDao_Impl implements TaskDao {
         } else {
           statement.bindString(5, entity.status);
         }
-        statement.bindDouble(6, entity.position);
+        if (entity.position == null) {
+          statement.bindNull(6);
+        } else {
+          statement.bindDouble(6, entity.position);
+        }
         final Long _tmp_2 = DateConverters.fromDate(entity.dueDate);
         if (_tmp_2 == null) {
           statement.bindNull(7);
@@ -132,7 +136,11 @@ public final class TaskDao_Impl implements TaskDao {
         } else {
           statement.bindString(5, entity.status);
         }
-        statement.bindDouble(6, entity.position);
+        if (entity.position == null) {
+          statement.bindNull(6);
+        } else {
+          statement.bindDouble(6, entity.position);
+        }
         final Long _tmp_2 = DateConverters.fromDate(entity.dueDate);
         if (_tmp_2 == null) {
           statement.bindNull(7);
@@ -400,7 +408,11 @@ public final class TaskDao_Impl implements TaskDao {
         } else {
           _item.status = _cursor.getString(_cursorIndexOfStatus);
         }
-        _item.position = _cursor.getDouble(_cursorIndexOfPosition);
+        if (_cursor.isNull(_cursorIndexOfPosition)) {
+          _item.position = null;
+        } else {
+          _item.position = _cursor.getDouble(_cursorIndexOfPosition);
+        }
         final Long _tmp_2;
         if (_cursor.isNull(_cursorIndexOfDueDate)) {
           _tmp_2 = null;
@@ -484,7 +496,11 @@ public final class TaskDao_Impl implements TaskDao {
         } else {
           _item.status = _cursor.getString(_cursorIndexOfStatus);
         }
-        _item.position = _cursor.getDouble(_cursorIndexOfPosition);
+        if (_cursor.isNull(_cursorIndexOfPosition)) {
+          _item.position = null;
+        } else {
+          _item.position = _cursor.getDouble(_cursorIndexOfPosition);
+        }
         final Long _tmp_2;
         if (_cursor.isNull(_cursorIndexOfDueDate)) {
           _tmp_2 = null;
@@ -562,7 +578,11 @@ public final class TaskDao_Impl implements TaskDao {
         } else {
           _result.status = _cursor.getString(_cursorIndexOfStatus);
         }
-        _result.position = _cursor.getDouble(_cursorIndexOfPosition);
+        if (_cursor.isNull(_cursorIndexOfPosition)) {
+          _result.position = null;
+        } else {
+          _result.position = _cursor.getDouble(_cursorIndexOfPosition);
+        }
         final Long _tmp_3;
         if (_cursor.isNull(_cursorIndexOfDueDate)) {
           _tmp_3 = null;
@@ -642,7 +662,11 @@ public final class TaskDao_Impl implements TaskDao {
         } else {
           _item.status = _cursor.getString(_cursorIndexOfStatus);
         }
-        _item.position = _cursor.getDouble(_cursorIndexOfPosition);
+        if (_cursor.isNull(_cursorIndexOfPosition)) {
+          _item.position = null;
+        } else {
+          _item.position = _cursor.getDouble(_cursorIndexOfPosition);
+        }
         final Long _tmp_3;
         if (_cursor.isNull(_cursorIndexOfDueDate)) {
           _tmp_3 = null;
@@ -720,7 +744,11 @@ public final class TaskDao_Impl implements TaskDao {
         } else {
           _item.status = _cursor.getString(_cursorIndexOfStatus);
         }
-        _item.position = _cursor.getDouble(_cursorIndexOfPosition);
+        if (_cursor.isNull(_cursorIndexOfPosition)) {
+          _item.position = null;
+        } else {
+          _item.position = _cursor.getDouble(_cursorIndexOfPosition);
+        }
         final Long _tmp_2;
         if (_cursor.isNull(_cursorIndexOfDueDate)) {
           _tmp_2 = null;
@@ -804,7 +832,11 @@ public final class TaskDao_Impl implements TaskDao {
         } else {
           _item.status = _cursor.getString(_cursorIndexOfStatus);
         }
-        _item.position = _cursor.getDouble(_cursorIndexOfPosition);
+        if (_cursor.isNull(_cursorIndexOfPosition)) {
+          _item.position = null;
+        } else {
+          _item.position = _cursor.getDouble(_cursorIndexOfPosition);
+        }
         final Long _tmp_2;
         if (_cursor.isNull(_cursorIndexOfDueDate)) {
           _tmp_2 = null;
@@ -876,7 +908,11 @@ public final class TaskDao_Impl implements TaskDao {
         } else {
           _item.status = _cursor.getString(_cursorIndexOfStatus);
         }
-        _item.position = _cursor.getDouble(_cursorIndexOfPosition);
+        if (_cursor.isNull(_cursorIndexOfPosition)) {
+          _item.position = null;
+        } else {
+          _item.position = _cursor.getDouble(_cursorIndexOfPosition);
+        }
         final Long _tmp_2;
         if (_cursor.isNull(_cursorIndexOfDueDate)) {
           _tmp_2 = null;
@@ -979,7 +1015,11 @@ public final class TaskDao_Impl implements TaskDao {
         } else {
           _item.status = _cursor.getString(_cursorIndexOfStatus);
         }
-        _item.position = _cursor.getDouble(_cursorIndexOfPosition);
+        if (_cursor.isNull(_cursorIndexOfPosition)) {
+          _item.position = null;
+        } else {
+          _item.position = _cursor.getDouble(_cursorIndexOfPosition);
+        }
         final Long _tmp_2;
         if (_cursor.isNull(_cursorIndexOfDueDate)) {
           _tmp_2 = null;
@@ -1062,7 +1102,11 @@ public final class TaskDao_Impl implements TaskDao {
         } else {
           _item.status = _cursor.getString(_cursorIndexOfStatus);
         }
-        _item.position = _cursor.getDouble(_cursorIndexOfPosition);
+        if (_cursor.isNull(_cursorIndexOfPosition)) {
+          _item.position = null;
+        } else {
+          _item.position = _cursor.getDouble(_cursorIndexOfPosition);
+        }
         final Long _tmp_2;
         if (_cursor.isNull(_cursorIndexOfDueDate)) {
           _tmp_2 = null;
