@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.teamapp-mergeDebugResources-44:/values-pt-rPT/values-pt-rPT.xml",
+            "outputFile": "com.teamapp-mergeDebugResources-2:/values-pt-rPT/values-pt-rPT.xml",
             "map": [
                 {
                     "source": "C:\\Users\\ADMIN\\.gradle\\caches\\9.0-milestone-1\\transforms\\b47da3e679cf9781489323d0c83b369e\\transformed\\core-1.13.0\\res\\values-pt-rPT\\values-pt-rPT.xml",

@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.teamapp-mergeDebugResources-44:/values-w600dp-land-v13/values-w600dp-land-v13.xml",
+            "outputFile": "com.teamapp-mergeDebugResources-2:/values-w600dp-land-v13/values-w600dp-land-v13.xml",
             "map": [
                 {
                     "source": "C:\\Users\\ADMIN\\.gradle\\caches\\9.0-milestone-1\\transforms\\fa1cfffeb32a0625860f621cd89b29aa\\transformed\\material-1.12.0\\res\\values-w600dp-land-v13\\values-w600dp-land-v13.xml",

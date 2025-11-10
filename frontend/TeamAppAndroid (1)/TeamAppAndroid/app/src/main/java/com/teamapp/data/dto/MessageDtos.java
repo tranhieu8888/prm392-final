@@ -10,6 +10,7 @@ public class MessageDtos {
         @SerializedName("id") public UUID id;
         @SerializedName("conversationId") public UUID conversationId;
         @SerializedName("senderId") public UUID senderId;
+        @SerializedName("senderName") public String senderName;
         @SerializedName("body") public String body;
         @SerializedName("createdAt") public Date createdAt;
     }

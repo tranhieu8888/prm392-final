@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.teamapp-mergeDebugResources-44:/values-large-v4/values-large-v4.xml",
+            "outputFile": "com.teamapp-mergeDebugResources-2:/values-large-v4/values-large-v4.xml",
             "map": [
                 {
                     "source": "C:\\Users\\ADMIN\\.gradle\\caches\\9.0-milestone-1\\transforms\\6b235bc1a5d7496560259fcb37efcf29\\transformed\\appcompat-1.7.0\\res\\values-large-v4\\values-large-v4.xml",

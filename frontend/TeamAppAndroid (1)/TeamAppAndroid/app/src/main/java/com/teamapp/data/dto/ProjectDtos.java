@@ -10,6 +10,7 @@ public class ProjectDtos {
         @SerializedName("name") public String name;
         @SerializedName("description") public String description;
         @SerializedName("isPublic") public boolean isPublic;
+        
         public CreateProjectRequest(String name, String description, boolean isPublic) {
             this.name = name; this.description = description; this.isPublic = isPublic;
         }
@@ -21,5 +22,6 @@ public class ProjectDtos {
         @SerializedName("description") public String description;
         @SerializedName("isPublic") public boolean isPublic;
         @SerializedName("createdAt") public Date createdAt;
+        @SerializedName("status") public String status;
     }
 }

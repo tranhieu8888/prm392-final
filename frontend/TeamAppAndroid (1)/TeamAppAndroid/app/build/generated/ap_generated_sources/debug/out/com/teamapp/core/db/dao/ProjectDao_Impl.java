@@ -49,7 +49,7 @@ public final class ProjectDao_Impl implements ProjectDao {
       @Override
       @NonNull
       protected String createQuery() {
-        return "INSERT OR REPLACE INTO `projects` (`id`,`name`,`description`,`isPublic`,`createdAt`) VALUES (?,?,?,?,?)";
+        return "INSERT OR REPLACE INTO `projects` (`id`,`name`,`description`,`isPublic`,`status`,`createdAt`) VALUES (?,?,?,?,?,?)";
       }
 
       @Override
@@ -73,11 +73,16 @@ public final class ProjectDao_Impl implements ProjectDao {
         }
         final int _tmp_1 = entity.isPublic ? 1 : 0;
         statement.bindLong(4, _tmp_1);
-        final Long _tmp_2 = DateConverters.fromDate(entity.createdAt);
-        if (_tmp_2 == null) {
+        if (entity.status == null) {
           statement.bindNull(5);
         } else {
-          statement.bindLong(5, _tmp_2);
+          statement.bindString(5, entity.status);
+        }
+        final Long _tmp_2 = DateConverters.fromDate(entity.createdAt);
+        if (_tmp_2 == null) {
+          statement.bindNull(6);
+        } else {
+          statement.bindLong(6, _tmp_2);
         }
       }
     };
@@ -85,7 +90,7 @@ public final class ProjectDao_Impl implements ProjectDao {
       @Override
       @NonNull
       protected String createQuery() {
-        return "UPDATE OR ABORT `projects` SET `id` = ?,`name` = ?,`description` = ?,`isPublic` = ?,`createdAt` = ? WHERE `id` = ?";
+        return "UPDATE OR ABORT `projects` SET `id` = ?,`name` = ?,`description` = ?,`isPublic` = ?,`status` = ?,`createdAt` = ? WHERE `id` = ?";
       }
 
       @Override
@@ -109,17 +114,22 @@ public final class ProjectDao_Impl implements ProjectDao {
         }
         final int _tmp_1 = entity.isPublic ? 1 : 0;
         statement.bindLong(4, _tmp_1);
-        final Long _tmp_2 = DateConverters.fromDate(entity.createdAt);
-        if (_tmp_2 == null) {
+        if (entity.status == null) {
           statement.bindNull(5);
         } else {
-          statement.bindLong(5, _tmp_2);
+          statement.bindString(5, entity.status);
+        }
+        final Long _tmp_2 = DateConverters.fromDate(entity.createdAt);
+        if (_tmp_2 == null) {
+          statement.bindNull(6);
+        } else {
+          statement.bindLong(6, _tmp_2);
         }
         final String _tmp_3 = DateConverters.fromUuid(entity.id);
         if (_tmp_3 == null) {
-          statement.bindNull(6);
+          statement.bindNull(7);
         } else {
-          statement.bindString(6, _tmp_3);
+          statement.bindString(7, _tmp_3);
         }
       }
     };
@@ -280,6 +290,7 @@ public final class ProjectDao_Impl implements ProjectDao {
           final int _cursorIndexOfName = CursorUtil.getColumnIndexOrThrow(_cursor, "name");
           final int _cursorIndexOfDescription = CursorUtil.getColumnIndexOrThrow(_cursor, "description");
           final int _cursorIndexOfIsPublic = CursorUtil.getColumnIndexOrThrow(_cursor, "isPublic");
+          final int _cursorIndexOfStatus = CursorUtil.getColumnIndexOrThrow(_cursor, "status");
           final int _cursorIndexOfCreatedAt = CursorUtil.getColumnIndexOrThrow(_cursor, "createdAt");
           final List<ProjectEntity> _result = new ArrayList<ProjectEntity>(_cursor.getCount());
           while (_cursor.moveToNext()) {
@@ -305,6 +316,11 @@ public final class ProjectDao_Impl implements ProjectDao {
             final int _tmp_1;
             _tmp_1 = _cursor.getInt(_cursorIndexOfIsPublic);
             _item.isPublic = _tmp_1 != 0;
+            if (_cursor.isNull(_cursorIndexOfStatus)) {
+              _item.status = null;
+            } else {
+              _item.status = _cursor.getString(_cursorIndexOfStatus);
+            }
             final Long _tmp_2;
             if (_cursor.isNull(_cursorIndexOfCreatedAt)) {
               _tmp_2 = null;
@@ -345,6 +361,7 @@ public final class ProjectDao_Impl implements ProjectDao {
       final int _cursorIndexOfName = CursorUtil.getColumnIndexOrThrow(_cursor, "name");
       final int _cursorIndexOfDescription = CursorUtil.getColumnIndexOrThrow(_cursor, "description");
       final int _cursorIndexOfIsPublic = CursorUtil.getColumnIndexOrThrow(_cursor, "isPublic");
+      final int _cursorIndexOfStatus = CursorUtil.getColumnIndexOrThrow(_cursor, "status");
       final int _cursorIndexOfCreatedAt = CursorUtil.getColumnIndexOrThrow(_cursor, "createdAt");
       final ProjectEntity _result;
       if (_cursor.moveToFirst()) {
@@ -369,6 +386,11 @@ public final class ProjectDao_Impl implements ProjectDao {
         final int _tmp_2;
         _tmp_2 = _cursor.getInt(_cursorIndexOfIsPublic);
         _result.isPublic = _tmp_2 != 0;
+        if (_cursor.isNull(_cursorIndexOfStatus)) {
+          _result.status = null;
+        } else {
+          _result.status = _cursor.getString(_cursorIndexOfStatus);
+        }
         final Long _tmp_3;
         if (_cursor.isNull(_cursorIndexOfCreatedAt)) {
           _tmp_3 = null;
@@ -397,6 +419,7 @@ public final class ProjectDao_Impl implements ProjectDao {
       final int _cursorIndexOfName = CursorUtil.getColumnIndexOrThrow(_cursor, "name");
       final int _cursorIndexOfDescription = CursorUtil.getColumnIndexOrThrow(_cursor, "description");
       final int _cursorIndexOfIsPublic = CursorUtil.getColumnIndexOrThrow(_cursor, "isPublic");
+      final int _cursorIndexOfStatus = CursorUtil.getColumnIndexOrThrow(_cursor, "status");
       final int _cursorIndexOfCreatedAt = CursorUtil.getColumnIndexOrThrow(_cursor, "createdAt");
       final List<ProjectEntity> _result = new ArrayList<ProjectEntity>(_cursor.getCount());
       while (_cursor.moveToNext()) {
@@ -422,6 +445,11 @@ public final class ProjectDao_Impl implements ProjectDao {
         final int _tmp_1;
         _tmp_1 = _cursor.getInt(_cursorIndexOfIsPublic);
         _item.isPublic = _tmp_1 != 0;
+        if (_cursor.isNull(_cursorIndexOfStatus)) {
+          _item.status = null;
+        } else {
+          _item.status = _cursor.getString(_cursorIndexOfStatus);
+        }
         final Long _tmp_2;
         if (_cursor.isNull(_cursorIndexOfCreatedAt)) {
           _tmp_2 = null;
@@ -455,6 +483,7 @@ public final class ProjectDao_Impl implements ProjectDao {
       final int _cursorIndexOfName = CursorUtil.getColumnIndexOrThrow(_cursor, "name");
       final int _cursorIndexOfDescription = CursorUtil.getColumnIndexOrThrow(_cursor, "description");
       final int _cursorIndexOfIsPublic = CursorUtil.getColumnIndexOrThrow(_cursor, "isPublic");
+      final int _cursorIndexOfStatus = CursorUtil.getColumnIndexOrThrow(_cursor, "status");
       final int _cursorIndexOfCreatedAt = CursorUtil.getColumnIndexOrThrow(_cursor, "createdAt");
       final List<ProjectEntity> _result = new ArrayList<ProjectEntity>(_cursor.getCount());
       while (_cursor.moveToNext()) {
@@ -480,6 +509,11 @@ public final class ProjectDao_Impl implements ProjectDao {
         final int _tmp_1;
         _tmp_1 = _cursor.getInt(_cursorIndexOfIsPublic);
         _item.isPublic = _tmp_1 != 0;
+        if (_cursor.isNull(_cursorIndexOfStatus)) {
+          _item.status = null;
+        } else {
+          _item.status = _cursor.getString(_cursorIndexOfStatus);
+        }
         final Long _tmp_2;
         if (_cursor.isNull(_cursorIndexOfCreatedAt)) {
           _tmp_2 = null;

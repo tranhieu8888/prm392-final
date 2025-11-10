@@ -1,5 +1,4 @@
-﻿// Program.cs
-using Microsoft.AspNetCore.Authentication.JwtBearer;
+﻿using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
@@ -12,11 +11,11 @@ using TeamApp.Infrastructure;
 var builder = WebApplication.CreateBuilder(args);
 var cfg = builder.Configuration;
 
-// ========== EF Core ==========
+// ================== Database ==================
 builder.Services.AddDbContext<AppDbContext>(opt =>
     opt.UseSqlServer(cfg.GetConnectionString("Default")));
 
-// ========== Services ==========
+// ================== Application Services ==================
 builder.Services.AddScoped<AuthService>();
 builder.Services.AddScoped<ProjectService>();
 builder.Services.AddScoped<TaskService>();
@@ -30,13 +29,15 @@ builder.Services.AddScoped<ProfileService>();
 builder.Services.AddScoped<CommentService>();
 builder.Services.AddScoped<ConversationService>();
 builder.Services.AddScoped<MessageService>();
-builder.Services.AddScoped<IRealtimeNotifier, SignalRRealtimeNotifier>();
 
+// realtime notifier
+builder.Services.AddScoped<IRealtimeNotifier, SignalRRealtimeNotifier>();
 builder.Services.AddSignalR();
+
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 
-// Swagger + JWT (optional nhưng hữu ích khi test)
+// ================== Swagger (optional) ==================
 builder.Services.AddSwaggerGen(c =>
 {
     c.SwaggerDoc("v1", new() { Title = "TeamApp API", Version = "v1" });
@@ -47,7 +48,7 @@ builder.Services.AddSwaggerGen(c =>
         Scheme = "bearer",
         BearerFormat = "JWT",
         In = Microsoft.OpenApi.Models.ParameterLocation.Header,
-        Description = "Nhập token theo dạng: Bearer {token}"
+        Description = "Bearer {token}"
     };
     c.AddSecurityDefinition("Bearer", jwtScheme);
     c.AddSecurityRequirement(new()
@@ -56,17 +57,17 @@ builder.Services.AddSwaggerGen(c =>
     });
 });
 
-// ========== JWT ==========
-var keyBytes = JwtKeyHelper.GetKeyBytes(cfg);
-var signingKey = new SymmetricSecurityKey(keyBytes);
+// ================== JWT Auth ==================
 var issuer = cfg["Jwt:Issuer"] ?? "TeamApp";
 var audience = cfg["Jwt:Audience"] ?? "TeamApp";
+var keyBytes = Encoding.UTF8.GetBytes(cfg["Jwt:Key"] ?? "Default_Dev_Key_1234567890");
+var signingKey = new SymmetricSecurityKey(keyBytes);
 
 builder.Services
     .AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     .AddJwtBearer(options =>
     {
-        options.RequireHttpsMetadata = true;
+        options.RequireHttpsMetadata = false;
         options.SaveToken = true;
         options.TokenValidationParameters = new TokenValidationParameters
         {
@@ -79,15 +80,15 @@ builder.Services
             ClockSkew = TimeSpan.Zero
         };
 
-        // Cho phép SignalR nhận token qua query "?access_token="
+        // Cho phép SignalR client truyền token qua query (?access_token=...)
         options.Events = new JwtBearerEvents
         {
-            OnMessageReceived = context =>
+            OnMessageReceived = ctx =>
             {
-                var accessToken = context.Request.Query["access_token"];
-                var path = context.HttpContext.Request.Path;
+                var accessToken = ctx.Request.Query["access_token"];
+                var path = ctx.HttpContext.Request.Path;
                 if (!string.IsNullOrEmpty(accessToken) && path.StartsWithSegments("/hubs/chat"))
-                    context.Token = accessToken;
+                    ctx.Token = accessToken;
                 return Task.CompletedTask;
             }
         };
@@ -97,7 +98,7 @@ builder.Services.AddAuthorization();
 
 var app = builder.Build();
 
-// ========== Middleware thứ tự đúng ==========
+// ================== Middleware Order ==================
 if (app.Environment.IsDevelopment())
 {
     app.UseDeveloperExceptionPage();
@@ -105,7 +106,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-//app.UseHttpsRedirection();
+app.UseRouting();
 
 app.UseAuthentication();
 app.UseAuthorization();

@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.teamapp-mergeDebugResources-44:/values-ta/values-ta.xml",
+            "outputFile": "com.teamapp-mergeDebugResources-2:/values-ta/values-ta.xml",
             "map": [
                 {
                     "source": "C:\\Users\\ADMIN\\.gradle\\caches\\9.0-milestone-1\\transforms\\0e732cc685d8c42459db1436e505e9bb\\transformed\\play-services-base-18.0.1\\res\\values-ta\\values.xml",

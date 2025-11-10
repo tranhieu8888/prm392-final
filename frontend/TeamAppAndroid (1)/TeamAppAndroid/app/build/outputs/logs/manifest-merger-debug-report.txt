@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\ADMIN\Documents\Downloads\TeamAppAndroid\TeamAppAndroid\app\src\main\AndroidManifest.xml:2:1-83:12
-INJECTED from C:\Users\ADMIN\Documents\Downloads\TeamAppAndroid\TeamAppAndroid\app\src\main\AndroidManifest.xml:2:1-83:12
-INJECTED from C:\Users\ADMIN\Documents\Downloads\TeamAppAndroid\TeamAppAndroid\app\src\main\AndroidManifest.xml:2:1-83:12
-INJECTED from C:\Users\ADMIN\Documents\Downloads\TeamAppAndroid\TeamAppAndroid\app\src\main\AndroidManifest.xml:2:1-83:12
+ADDED from C:\Project\prm392-final\frontend\TeamAppAndroid (1)\TeamAppAndroid\app\src\main\AndroidManifest.xml:2:1-84:12
+INJECTED from C:\Project\prm392-final\frontend\TeamAppAndroid (1)\TeamAppAndroid\app\src\main\AndroidManifest.xml:2:1-84:12
+INJECTED from C:\Project\prm392-final\frontend\TeamAppAndroid (1)\TeamAppAndroid\app\src\main\AndroidManifest.xml:2:1-84:12
+INJECTED from C:\Project\prm392-final\frontend\TeamAppAndroid (1)\TeamAppAndroid\app\src\main\AndroidManifest.xml:2:1-84:12
 MERGED from [com.google.android.material:material:1.12.0] C:\Users\ADMIN\.gradle\caches\9.0-milestone-1\transforms\fa1cfffeb32a0625860f621cd89b29aa\transformed\material-1.12.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.2.0] C:\Users\ADMIN\.gradle\caches\9.0-milestone-1\transforms\83992258bff6738ab1332cb2a84ac170\transformed\constraintlayout-2.2.0\AndroidManifest.xml:2:1-9:12
 MERGED from [androidx.appcompat:appcompat-resources:1.7.0] C:\Users\ADMIN\.gradle\caches\9.0-milestone-1\transforms\b16d2a644d1b2322d470abe56963f28e\transformed\appcompat-resources-1.7.0\AndroidManifest.xml:2:1-7:12
@@ -75,18 +75,18 @@ MERGED from [androidx.sqlite:sqlite-framework-android:2.5.0] C:\Users\ADMIN\.gra
 MERGED from [androidx.sqlite:sqlite-android:2.5.0] C:\Users\ADMIN\.gradle\caches\9.0-milestone-1\transforms\2f893eb63db4c77245bf5c3c0fd19299\transformed\sqlite-release\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.annotation:annotation-experimental:1.4.1] C:\Users\ADMIN\.gradle\caches\9.0-milestone-1\transforms\d5a63ec9838430a244da90171e1cf1ed\transformed\annotation-experimental-1.4.1\AndroidManifest.xml:2:1-7:12
 	package
-		ADDED from C:\Users\ADMIN\Documents\Downloads\TeamAppAndroid\TeamAppAndroid\app\src\main\AndroidManifest.xml:4:5-26
-		INJECTED from C:\Users\ADMIN\Documents\Downloads\TeamAppAndroid\TeamAppAndroid\app\src\main\AndroidManifest.xml
+		ADDED from C:\Project\prm392-final\frontend\TeamAppAndroid (1)\TeamAppAndroid\app\src\main\AndroidManifest.xml:4:5-26
+		INJECTED from C:\Project\prm392-final\frontend\TeamAppAndroid (1)\TeamAppAndroid\app\src\main\AndroidManifest.xml
 	android:versionName
-		INJECTED from C:\Users\ADMIN\Documents\Downloads\TeamAppAndroid\TeamAppAndroid\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Project\prm392-final\frontend\TeamAppAndroid (1)\TeamAppAndroid\app\src\main\AndroidManifest.xml
 	xmlns:tools
-		ADDED from C:\Users\ADMIN\Documents\Downloads\TeamAppAndroid\TeamAppAndroid\app\src\main\AndroidManifest.xml:3:5-51
+		ADDED from C:\Project\prm392-final\frontend\TeamAppAndroid (1)\TeamAppAndroid\app\src\main\AndroidManifest.xml:3:5-51
 	android:versionCode
-		INJECTED from C:\Users\ADMIN\Documents\Downloads\TeamAppAndroid\TeamAppAndroid\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Project\prm392-final\frontend\TeamAppAndroid (1)\TeamAppAndroid\app\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from C:\Users\ADMIN\Documents\Downloads\TeamAppAndroid\TeamAppAndroid\app\src\main\AndroidManifest.xml:2:11-69
+		ADDED from C:\Project\prm392-final\frontend\TeamAppAndroid (1)\TeamAppAndroid\app\src\main\AndroidManifest.xml:2:11-69
 uses-permission#android.permission.INTERNET
-ADDED from C:\Users\ADMIN\Documents\Downloads\TeamAppAndroid\TeamAppAndroid\app\src\main\AndroidManifest.xml:7:3-65
+ADDED from C:\Project\prm392-final\frontend\TeamAppAndroid (1)\TeamAppAndroid\app\src\main\AndroidManifest.xml:7:3-65
 MERGED from [com.google.android.gms:play-services-cloud-messaging:17.2.0] C:\Users\ADMIN\.gradle\caches\9.0-milestone-1\transforms\708b341286c2422e97c5c8c48b8da98d\transformed\play-services-cloud-messaging-17.2.0\AndroidManifest.xml:8:5-67
 MERGED from [com.google.android.gms:play-services-cloud-messaging:17.2.0] C:\Users\ADMIN\.gradle\caches\9.0-milestone-1\transforms\708b341286c2422e97c5c8c48b8da98d\transformed\play-services-cloud-messaging-17.2.0\AndroidManifest.xml:8:5-67
 MERGED from [com.google.firebase:firebase-installations:18.0.0] C:\Users\ADMIN\.gradle\caches\9.0-milestone-1\transforms\57a8fb043273ea31b7d86a9b46729cef\transformed\firebase-installations-18.0.0\AndroidManifest.xml:8:5-67
@@ -94,9 +94,9 @@ MERGED from [com.google.firebase:firebase-installations:18.0.0] C:\Users\ADMIN\.
 MERGED from [com.google.android.datatransport:transport-backend-cct:3.1.9] C:\Users\ADMIN\.gradle\caches\9.0-milestone-1\transforms\facd810df72d4e1a40b964ba2eda4af6\transformed\transport-backend-cct-3.1.9\AndroidManifest.xml:25:5-67
 MERGED from [com.google.android.datatransport:transport-backend-cct:3.1.9] C:\Users\ADMIN\.gradle\caches\9.0-milestone-1\transforms\facd810df72d4e1a40b964ba2eda4af6\transformed\transport-backend-cct-3.1.9\AndroidManifest.xml:25:5-67
 	android:name
-		ADDED from C:\Users\ADMIN\Documents\Downloads\TeamAppAndroid\TeamAppAndroid\app\src\main\AndroidManifest.xml:7:20-62
+		ADDED from C:\Project\prm392-final\frontend\TeamAppAndroid (1)\TeamAppAndroid\app\src\main\AndroidManifest.xml:7:20-62
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from C:\Users\ADMIN\Documents\Downloads\TeamAppAndroid\TeamAppAndroid\app\src\main\AndroidManifest.xml:8:3-77
+ADDED from C:\Project\prm392-final\frontend\TeamAppAndroid (1)\TeamAppAndroid\app\src\main\AndroidManifest.xml:8:3-77
 MERGED from [com.google.firebase:firebase-messaging:24.0.3] C:\Users\ADMIN\.gradle\caches\9.0-milestone-1\transforms\06fe9585686ae691e4e399ee2f65a858\transformed\firebase-messaging-24.0.3\AndroidManifest.xml:22:5-79
 MERGED from [com.google.firebase:firebase-messaging:24.0.3] C:\Users\ADMIN\.gradle\caches\9.0-milestone-1\transforms\06fe9585686ae691e4e399ee2f65a858\transformed\firebase-messaging-24.0.3\AndroidManifest.xml:22:5-79
 MERGED from [com.google.android.gms:play-services-cloud-messaging:17.2.0] C:\Users\ADMIN\.gradle\caches\9.0-milestone-1\transforms\708b341286c2422e97c5c8c48b8da98d\transformed\play-services-cloud-messaging-17.2.0\AndroidManifest.xml:7:5-79
@@ -110,18 +110,18 @@ MERGED from [com.google.android.datatransport:transport-backend-cct:3.1.9] C:\Us
 MERGED from [com.google.android.datatransport:transport-runtime:3.1.9] C:\Users\ADMIN\.gradle\caches\9.0-milestone-1\transforms\df5dd79b1ab990c91cbd447b5d2ccda0\transformed\transport-runtime-3.1.9\AndroidManifest.xml:22:5-79
 MERGED from [com.google.android.datatransport:transport-runtime:3.1.9] C:\Users\ADMIN\.gradle\caches\9.0-milestone-1\transforms\df5dd79b1ab990c91cbd447b5d2ccda0\transformed\transport-runtime-3.1.9\AndroidManifest.xml:22:5-79
 	android:name
-		ADDED from C:\Users\ADMIN\Documents\Downloads\TeamAppAndroid\TeamAppAndroid\app\src\main\AndroidManifest.xml:8:20-74
+		ADDED from C:\Project\prm392-final\frontend\TeamAppAndroid (1)\TeamAppAndroid\app\src\main\AndroidManifest.xml:8:20-74
 uses-permission#android.permission.POST_NOTIFICATIONS
-ADDED from C:\Users\ADMIN\Documents\Downloads\TeamAppAndroid\TeamAppAndroid\app\src\main\AndroidManifest.xml:12:3-14:30
+ADDED from C:\Project\prm392-final\frontend\TeamAppAndroid (1)\TeamAppAndroid\app\src\main\AndroidManifest.xml:12:3-14:30
 MERGED from [com.google.firebase:firebase-messaging:24.0.3] C:\Users\ADMIN\.gradle\caches\9.0-milestone-1\transforms\06fe9585686ae691e4e399ee2f65a858\transformed\firebase-messaging-24.0.3\AndroidManifest.xml:23:5-77
 MERGED from [com.google.firebase:firebase-messaging:24.0.3] C:\Users\ADMIN\.gradle\caches\9.0-milestone-1\transforms\06fe9585686ae691e4e399ee2f65a858\transformed\firebase-messaging-24.0.3\AndroidManifest.xml:23:5-77
 	tools:targetApi
-		ADDED from C:\Users\ADMIN\Documents\Downloads\TeamAppAndroid\TeamAppAndroid\app\src\main\AndroidManifest.xml:14:7-27
+		ADDED from C:\Project\prm392-final\frontend\TeamAppAndroid (1)\TeamAppAndroid\app\src\main\AndroidManifest.xml:14:7-27
 	android:name
-		ADDED from C:\Users\ADMIN\Documents\Downloads\TeamAppAndroid\TeamAppAndroid\app\src\main\AndroidManifest.xml:13:7-59
+		ADDED from C:\Project\prm392-final\frontend\TeamAppAndroid (1)\TeamAppAndroid\app\src\main\AndroidManifest.xml:13:7-59
 application
-ADDED from C:\Users\ADMIN\Documents\Downloads\TeamAppAndroid\TeamAppAndroid\app\src\main\AndroidManifest.xml:16:3-81:17
-INJECTED from C:\Users\ADMIN\Documents\Downloads\TeamAppAndroid\TeamAppAndroid\app\src\main\AndroidManifest.xml:16:3-81:17
+ADDED from C:\Project\prm392-final\frontend\TeamAppAndroid (1)\TeamAppAndroid\app\src\main\AndroidManifest.xml:16:3-82:17
+INJECTED from C:\Project\prm392-final\frontend\TeamAppAndroid (1)\TeamAppAndroid\app\src\main\AndroidManifest.xml:16:3-82:17
 MERGED from [com.google.android.material:material:1.12.0] C:\Users\ADMIN\.gradle\caches\9.0-milestone-1\transforms\fa1cfffeb32a0625860f621cd89b29aa\transformed\material-1.12.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.12.0] C:\Users\ADMIN\.gradle\caches\9.0-milestone-1\transforms\fa1cfffeb32a0625860f621cd89b29aa\transformed\material-1.12.0\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.2.0] C:\Users\ADMIN\.gradle\caches\9.0-milestone-1\transforms\83992258bff6738ab1332cb2a84ac170\transformed\constraintlayout-2.2.0\AndroidManifest.xml:7:5-20
@@ -169,153 +169,159 @@ MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\ADMIN\.gradle\cach
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\ADMIN\.gradle\caches\9.0-milestone-1\transforms\55c7c1b9aaed7916e7bde7897a3d1589\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\ADMIN\.gradle\caches\9.0-milestone-1\transforms\55c7c1b9aaed7916e7bde7897a3d1589\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
 	android:extractNativeLibs
-		INJECTED from C:\Users\ADMIN\Documents\Downloads\TeamAppAndroid\TeamAppAndroid\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Project\prm392-final\frontend\TeamAppAndroid (1)\TeamAppAndroid\app\src\main\AndroidManifest.xml
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.13.0] C:\Users\ADMIN\.gradle\caches\9.0-milestone-1\transforms\b47da3e679cf9781489323d0c83b369e\transformed\core-1.13.0\AndroidManifest.xml:28:18-86
 	android:supportsRtl
-		ADDED from C:\Users\ADMIN\Documents\Downloads\TeamAppAndroid\TeamAppAndroid\app\src\main\AndroidManifest.xml:22:7-33
+		ADDED from C:\Project\prm392-final\frontend\TeamAppAndroid (1)\TeamAppAndroid\app\src\main\AndroidManifest.xml:22:7-33
 	android:label
-		ADDED from C:\Users\ADMIN\Documents\Downloads\TeamAppAndroid\TeamAppAndroid\app\src\main\AndroidManifest.xml:20:7-39
+		ADDED from C:\Project\prm392-final\frontend\TeamAppAndroid (1)\TeamAppAndroid\app\src\main\AndroidManifest.xml:20:7-39
 	android:roundIcon
-		ADDED from C:\Users\ADMIN\Documents\Downloads\TeamAppAndroid\TeamAppAndroid\app\src\main\AndroidManifest.xml:21:7-54
+		ADDED from C:\Project\prm392-final\frontend\TeamAppAndroid (1)\TeamAppAndroid\app\src\main\AndroidManifest.xml:21:7-54
 	android:icon
-		ADDED from C:\Users\ADMIN\Documents\Downloads\TeamAppAndroid\TeamAppAndroid\app\src\main\AndroidManifest.xml:19:7-43
+		ADDED from C:\Project\prm392-final\frontend\TeamAppAndroid (1)\TeamAppAndroid\app\src\main\AndroidManifest.xml:19:7-43
 	android:allowBackup
-		ADDED from C:\Users\ADMIN\Documents\Downloads\TeamAppAndroid\TeamAppAndroid\app\src\main\AndroidManifest.xml:18:7-33
+		ADDED from C:\Project\prm392-final\frontend\TeamAppAndroid (1)\TeamAppAndroid\app\src\main\AndroidManifest.xml:18:7-33
 	android:theme
-		ADDED from C:\Users\ADMIN\Documents\Downloads\TeamAppAndroid\TeamAppAndroid\app\src\main\AndroidManifest.xml:23:7-43
+		ADDED from C:\Project\prm392-final\frontend\TeamAppAndroid (1)\TeamAppAndroid\app\src\main\AndroidManifest.xml:23:7-43
 	android:networkSecurityConfig
-		ADDED from C:\Users\ADMIN\Documents\Downloads\TeamAppAndroid\TeamAppAndroid\app\src\main\AndroidManifest.xml:24:7-67
+		ADDED from C:\Project\prm392-final\frontend\TeamAppAndroid (1)\TeamAppAndroid\app\src\main\AndroidManifest.xml:24:7-67
 	android:name
-		ADDED from C:\Users\ADMIN\Documents\Downloads\TeamAppAndroid\TeamAppAndroid\app\src\main\AndroidManifest.xml:17:7-26
+		ADDED from C:\Project\prm392-final\frontend\TeamAppAndroid (1)\TeamAppAndroid\app\src\main\AndroidManifest.xml:17:7-26
 activity#com.teamapp.ui.auth.LoginActivity
-ADDED from C:\Users\ADMIN\Documents\Downloads\TeamAppAndroid\TeamAppAndroid\app\src\main\AndroidManifest.xml:27:5-34:16
+ADDED from C:\Project\prm392-final\frontend\TeamAppAndroid (1)\TeamAppAndroid\app\src\main\AndroidManifest.xml:27:5-34:16
 	android:exported
-		ADDED from C:\Users\ADMIN\Documents\Downloads\TeamAppAndroid\TeamAppAndroid\app\src\main\AndroidManifest.xml:29:9-32
+		ADDED from C:\Project\prm392-final\frontend\TeamAppAndroid (1)\TeamAppAndroid\app\src\main\AndroidManifest.xml:29:9-32
 	android:name
-		ADDED from C:\Users\ADMIN\Documents\Downloads\TeamAppAndroid\TeamAppAndroid\app\src\main\AndroidManifest.xml:28:9-46
+		ADDED from C:\Project\prm392-final\frontend\TeamAppAndroid (1)\TeamAppAndroid\app\src\main\AndroidManifest.xml:28:9-46
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\ADMIN\Documents\Downloads\TeamAppAndroid\TeamAppAndroid\app\src\main\AndroidManifest.xml:30:7-33:23
+ADDED from C:\Project\prm392-final\frontend\TeamAppAndroid (1)\TeamAppAndroid\app\src\main\AndroidManifest.xml:30:7-33:23
 action#android.intent.action.MAIN
-ADDED from C:\Users\ADMIN\Documents\Downloads\TeamAppAndroid\TeamAppAndroid\app\src\main\AndroidManifest.xml:31:9-61
+ADDED from C:\Project\prm392-final\frontend\TeamAppAndroid (1)\TeamAppAndroid\app\src\main\AndroidManifest.xml:31:9-61
 	android:name
-		ADDED from C:\Users\ADMIN\Documents\Downloads\TeamAppAndroid\TeamAppAndroid\app\src\main\AndroidManifest.xml:31:17-58
+		ADDED from C:\Project\prm392-final\frontend\TeamAppAndroid (1)\TeamAppAndroid\app\src\main\AndroidManifest.xml:31:17-58
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\ADMIN\Documents\Downloads\TeamAppAndroid\TeamAppAndroid\app\src\main\AndroidManifest.xml:32:9-69
+ADDED from C:\Project\prm392-final\frontend\TeamAppAndroid (1)\TeamAppAndroid\app\src\main\AndroidManifest.xml:32:9-69
 	android:name
-		ADDED from C:\Users\ADMIN\Documents\Downloads\TeamAppAndroid\TeamAppAndroid\app\src\main\AndroidManifest.xml:32:19-66
+		ADDED from C:\Project\prm392-final\frontend\TeamAppAndroid (1)\TeamAppAndroid\app\src\main\AndroidManifest.xml:32:19-66
 activity#com.teamapp.ui.auth.RegisterActivity
-ADDED from C:\Users\ADMIN\Documents\Downloads\TeamAppAndroid\TeamAppAndroid\app\src\main\AndroidManifest.xml:38:5-83
+ADDED from C:\Project\prm392-final\frontend\TeamAppAndroid (1)\TeamAppAndroid\app\src\main\AndroidManifest.xml:38:5-83
 	android:exported
-		ADDED from C:\Users\ADMIN\Documents\Downloads\TeamAppAndroid\TeamAppAndroid\app\src\main\AndroidManifest.xml:38:56-80
+		ADDED from C:\Project\prm392-final\frontend\TeamAppAndroid (1)\TeamAppAndroid\app\src\main\AndroidManifest.xml:38:56-80
 	android:name
-		ADDED from C:\Users\ADMIN\Documents\Downloads\TeamAppAndroid\TeamAppAndroid\app\src\main\AndroidManifest.xml:38:15-55
+		ADDED from C:\Project\prm392-final\frontend\TeamAppAndroid (1)\TeamAppAndroid\app\src\main\AndroidManifest.xml:38:15-55
+activity#com.teamapp.ui.main.MainActivity
+ADDED from C:\Project\prm392-final\frontend\TeamAppAndroid (1)\TeamAppAndroid\app\src\main\AndroidManifest.xml:39:5-79
+	android:exported
+		ADDED from C:\Project\prm392-final\frontend\TeamAppAndroid (1)\TeamAppAndroid\app\src\main\AndroidManifest.xml:39:52-76
+	android:name
+		ADDED from C:\Project\prm392-final\frontend\TeamAppAndroid (1)\TeamAppAndroid\app\src\main\AndroidManifest.xml:39:15-51
 activity#com.teamapp.ui.project.ProjectsActivity
-ADDED from C:\Users\ADMIN\Documents\Downloads\TeamAppAndroid\TeamAppAndroid\app\src\main\AndroidManifest.xml:41:5-86
+ADDED from C:\Project\prm392-final\frontend\TeamAppAndroid (1)\TeamAppAndroid\app\src\main\AndroidManifest.xml:42:5-86
 	android:exported
-		ADDED from C:\Users\ADMIN\Documents\Downloads\TeamAppAndroid\TeamAppAndroid\app\src\main\AndroidManifest.xml:41:59-83
+		ADDED from C:\Project\prm392-final\frontend\TeamAppAndroid (1)\TeamAppAndroid\app\src\main\AndroidManifest.xml:42:59-83
 	android:name
-		ADDED from C:\Users\ADMIN\Documents\Downloads\TeamAppAndroid\TeamAppAndroid\app\src\main\AndroidManifest.xml:41:15-58
+		ADDED from C:\Project\prm392-final\frontend\TeamAppAndroid (1)\TeamAppAndroid\app\src\main\AndroidManifest.xml:42:15-58
 activity#com.teamapp.ui.project.CreateProjectActivity
-ADDED from C:\Users\ADMIN\Documents\Downloads\TeamAppAndroid\TeamAppAndroid\app\src\main\AndroidManifest.xml:42:5-91
+ADDED from C:\Project\prm392-final\frontend\TeamAppAndroid (1)\TeamAppAndroid\app\src\main\AndroidManifest.xml:43:5-91
 	android:exported
-		ADDED from C:\Users\ADMIN\Documents\Downloads\TeamAppAndroid\TeamAppAndroid\app\src\main\AndroidManifest.xml:42:64-88
+		ADDED from C:\Project\prm392-final\frontend\TeamAppAndroid (1)\TeamAppAndroid\app\src\main\AndroidManifest.xml:43:64-88
 	android:name
-		ADDED from C:\Users\ADMIN\Documents\Downloads\TeamAppAndroid\TeamAppAndroid\app\src\main\AndroidManifest.xml:42:15-63
+		ADDED from C:\Project\prm392-final\frontend\TeamAppAndroid (1)\TeamAppAndroid\app\src\main\AndroidManifest.xml:43:15-63
 activity#com.teamapp.ui.project.MembersActivity
-ADDED from C:\Users\ADMIN\Documents\Downloads\TeamAppAndroid\TeamAppAndroid\app\src\main\AndroidManifest.xml:43:5-85
+ADDED from C:\Project\prm392-final\frontend\TeamAppAndroid (1)\TeamAppAndroid\app\src\main\AndroidManifest.xml:44:5-85
 	android:exported
-		ADDED from C:\Users\ADMIN\Documents\Downloads\TeamAppAndroid\TeamAppAndroid\app\src\main\AndroidManifest.xml:43:58-82
+		ADDED from C:\Project\prm392-final\frontend\TeamAppAndroid (1)\TeamAppAndroid\app\src\main\AndroidManifest.xml:44:58-82
 	android:name
-		ADDED from C:\Users\ADMIN\Documents\Downloads\TeamAppAndroid\TeamAppAndroid\app\src\main\AndroidManifest.xml:43:15-57
+		ADDED from C:\Project\prm392-final\frontend\TeamAppAndroid (1)\TeamAppAndroid\app\src\main\AndroidManifest.xml:44:15-57
 activity#com.teamapp.ui.project.DiscoverProjectsActivity
-ADDED from C:\Users\ADMIN\Documents\Downloads\TeamAppAndroid\TeamAppAndroid\app\src\main\AndroidManifest.xml:44:5-94
+ADDED from C:\Project\prm392-final\frontend\TeamAppAndroid (1)\TeamAppAndroid\app\src\main\AndroidManifest.xml:45:5-94
 	android:exported
-		ADDED from C:\Users\ADMIN\Documents\Downloads\TeamAppAndroid\TeamAppAndroid\app\src\main\AndroidManifest.xml:44:67-91
+		ADDED from C:\Project\prm392-final\frontend\TeamAppAndroid (1)\TeamAppAndroid\app\src\main\AndroidManifest.xml:45:67-91
 	android:name
-		ADDED from C:\Users\ADMIN\Documents\Downloads\TeamAppAndroid\TeamAppAndroid\app\src\main\AndroidManifest.xml:44:15-66
+		ADDED from C:\Project\prm392-final\frontend\TeamAppAndroid (1)\TeamAppAndroid\app\src\main\AndroidManifest.xml:45:15-66
 activity#com.teamapp.ui.task.KanbanActivity
-ADDED from C:\Users\ADMIN\Documents\Downloads\TeamAppAndroid\TeamAppAndroid\app\src\main\AndroidManifest.xml:47:5-81
+ADDED from C:\Project\prm392-final\frontend\TeamAppAndroid (1)\TeamAppAndroid\app\src\main\AndroidManifest.xml:48:5-81
 	android:exported
-		ADDED from C:\Users\ADMIN\Documents\Downloads\TeamAppAndroid\TeamAppAndroid\app\src\main\AndroidManifest.xml:47:54-78
+		ADDED from C:\Project\prm392-final\frontend\TeamAppAndroid (1)\TeamAppAndroid\app\src\main\AndroidManifest.xml:48:54-78
 	android:name
-		ADDED from C:\Users\ADMIN\Documents\Downloads\TeamAppAndroid\TeamAppAndroid\app\src\main\AndroidManifest.xml:47:15-53
+		ADDED from C:\Project\prm392-final\frontend\TeamAppAndroid (1)\TeamAppAndroid\app\src\main\AndroidManifest.xml:48:15-53
 activity#com.teamapp.ui.task.CreateTaskActivity
-ADDED from C:\Users\ADMIN\Documents\Downloads\TeamAppAndroid\TeamAppAndroid\app\src\main\AndroidManifest.xml:48:5-85
+ADDED from C:\Project\prm392-final\frontend\TeamAppAndroid (1)\TeamAppAndroid\app\src\main\AndroidManifest.xml:49:5-85
 	android:exported
-		ADDED from C:\Users\ADMIN\Documents\Downloads\TeamAppAndroid\TeamAppAndroid\app\src\main\AndroidManifest.xml:48:58-82
+		ADDED from C:\Project\prm392-final\frontend\TeamAppAndroid (1)\TeamAppAndroid\app\src\main\AndroidManifest.xml:49:58-82
 	android:name
-		ADDED from C:\Users\ADMIN\Documents\Downloads\TeamAppAndroid\TeamAppAndroid\app\src\main\AndroidManifest.xml:48:15-57
+		ADDED from C:\Project\prm392-final\frontend\TeamAppAndroid (1)\TeamAppAndroid\app\src\main\AndroidManifest.xml:49:15-57
 activity#com.teamapp.ui.task.TaskDetailActivity
-ADDED from C:\Users\ADMIN\Documents\Downloads\TeamAppAndroid\TeamAppAndroid\app\src\main\AndroidManifest.xml:49:5-85
+ADDED from C:\Project\prm392-final\frontend\TeamAppAndroid (1)\TeamAppAndroid\app\src\main\AndroidManifest.xml:50:5-85
 	android:exported
-		ADDED from C:\Users\ADMIN\Documents\Downloads\TeamAppAndroid\TeamAppAndroid\app\src\main\AndroidManifest.xml:49:58-82
+		ADDED from C:\Project\prm392-final\frontend\TeamAppAndroid (1)\TeamAppAndroid\app\src\main\AndroidManifest.xml:50:58-82
 	android:name
-		ADDED from C:\Users\ADMIN\Documents\Downloads\TeamAppAndroid\TeamAppAndroid\app\src\main\AndroidManifest.xml:49:15-57
+		ADDED from C:\Project\prm392-final\frontend\TeamAppAndroid (1)\TeamAppAndroid\app\src\main\AndroidManifest.xml:50:15-57
 activity#com.teamapp.ui.chat.ConversationsActivity
-ADDED from C:\Users\ADMIN\Documents\Downloads\TeamAppAndroid\TeamAppAndroid\app\src\main\AndroidManifest.xml:53:5-88
+ADDED from C:\Project\prm392-final\frontend\TeamAppAndroid (1)\TeamAppAndroid\app\src\main\AndroidManifest.xml:54:5-88
 	android:exported
-		ADDED from C:\Users\ADMIN\Documents\Downloads\TeamAppAndroid\TeamAppAndroid\app\src\main\AndroidManifest.xml:53:61-85
+		ADDED from C:\Project\prm392-final\frontend\TeamAppAndroid (1)\TeamAppAndroid\app\src\main\AndroidManifest.xml:54:61-85
 	android:name
-		ADDED from C:\Users\ADMIN\Documents\Downloads\TeamAppAndroid\TeamAppAndroid\app\src\main\AndroidManifest.xml:53:15-60
+		ADDED from C:\Project\prm392-final\frontend\TeamAppAndroid (1)\TeamAppAndroid\app\src\main\AndroidManifest.xml:54:15-60
 activity#com.teamapp.ui.chat.ChatActivity
-ADDED from C:\Users\ADMIN\Documents\Downloads\TeamAppAndroid\TeamAppAndroid\app\src\main\AndroidManifest.xml:54:5-79
+ADDED from C:\Project\prm392-final\frontend\TeamAppAndroid (1)\TeamAppAndroid\app\src\main\AndroidManifest.xml:55:5-79
 	android:exported
-		ADDED from C:\Users\ADMIN\Documents\Downloads\TeamAppAndroid\TeamAppAndroid\app\src\main\AndroidManifest.xml:54:52-76
+		ADDED from C:\Project\prm392-final\frontend\TeamAppAndroid (1)\TeamAppAndroid\app\src\main\AndroidManifest.xml:55:52-76
 	android:name
-		ADDED from C:\Users\ADMIN\Documents\Downloads\TeamAppAndroid\TeamAppAndroid\app\src\main\AndroidManifest.xml:54:15-51
+		ADDED from C:\Project\prm392-final\frontend\TeamAppAndroid (1)\TeamAppAndroid\app\src\main\AndroidManifest.xml:55:15-51
 activity#com.teamapp.ui.notif.NotificationsActivity
-ADDED from C:\Users\ADMIN\Documents\Downloads\TeamAppAndroid\TeamAppAndroid\app\src\main\AndroidManifest.xml:57:5-89
+ADDED from C:\Project\prm392-final\frontend\TeamAppAndroid (1)\TeamAppAndroid\app\src\main\AndroidManifest.xml:58:5-89
 	android:exported
-		ADDED from C:\Users\ADMIN\Documents\Downloads\TeamAppAndroid\TeamAppAndroid\app\src\main\AndroidManifest.xml:57:62-86
+		ADDED from C:\Project\prm392-final\frontend\TeamAppAndroid (1)\TeamAppAndroid\app\src\main\AndroidManifest.xml:58:62-86
 	android:name
-		ADDED from C:\Users\ADMIN\Documents\Downloads\TeamAppAndroid\TeamAppAndroid\app\src\main\AndroidManifest.xml:57:15-61
+		ADDED from C:\Project\prm392-final\frontend\TeamAppAndroid (1)\TeamAppAndroid\app\src\main\AndroidManifest.xml:58:15-61
 activity#com.teamapp.ui.profile.ProfileActivity
-ADDED from C:\Users\ADMIN\Documents\Downloads\TeamAppAndroid\TeamAppAndroid\app\src\main\AndroidManifest.xml:58:5-85
+ADDED from C:\Project\prm392-final\frontend\TeamAppAndroid (1)\TeamAppAndroid\app\src\main\AndroidManifest.xml:59:5-85
 	android:exported
-		ADDED from C:\Users\ADMIN\Documents\Downloads\TeamAppAndroid\TeamAppAndroid\app\src\main\AndroidManifest.xml:58:58-82
+		ADDED from C:\Project\prm392-final\frontend\TeamAppAndroid (1)\TeamAppAndroid\app\src\main\AndroidManifest.xml:59:58-82
 	android:name
-		ADDED from C:\Users\ADMIN\Documents\Downloads\TeamAppAndroid\TeamAppAndroid\app\src\main\AndroidManifest.xml:58:15-57
+		ADDED from C:\Project\prm392-final\frontend\TeamAppAndroid (1)\TeamAppAndroid\app\src\main\AndroidManifest.xml:59:15-57
 activity#com.teamapp.ui.profile.ChangePasswordActivity
-ADDED from C:\Users\ADMIN\Documents\Downloads\TeamAppAndroid\TeamAppAndroid\app\src\main\AndroidManifest.xml:59:5-92
+ADDED from C:\Project\prm392-final\frontend\TeamAppAndroid (1)\TeamAppAndroid\app\src\main\AndroidManifest.xml:60:5-92
 	android:exported
-		ADDED from C:\Users\ADMIN\Documents\Downloads\TeamAppAndroid\TeamAppAndroid\app\src\main\AndroidManifest.xml:59:65-89
+		ADDED from C:\Project\prm392-final\frontend\TeamAppAndroid (1)\TeamAppAndroid\app\src\main\AndroidManifest.xml:60:65-89
 	android:name
-		ADDED from C:\Users\ADMIN\Documents\Downloads\TeamAppAndroid\TeamAppAndroid\app\src\main\AndroidManifest.xml:59:15-64
+		ADDED from C:\Project\prm392-final\frontend\TeamAppAndroid (1)\TeamAppAndroid\app\src\main\AndroidManifest.xml:60:15-64
 activity#com.teamapp.ui.calendar.CalendarActivity
-ADDED from C:\Users\ADMIN\Documents\Downloads\TeamAppAndroid\TeamAppAndroid\app\src\main\AndroidManifest.xml:62:5-87
+ADDED from C:\Project\prm392-final\frontend\TeamAppAndroid (1)\TeamAppAndroid\app\src\main\AndroidManifest.xml:63:5-87
 	android:exported
-		ADDED from C:\Users\ADMIN\Documents\Downloads\TeamAppAndroid\TeamAppAndroid\app\src\main\AndroidManifest.xml:62:60-84
+		ADDED from C:\Project\prm392-final\frontend\TeamAppAndroid (1)\TeamAppAndroid\app\src\main\AndroidManifest.xml:63:60-84
 	android:name
-		ADDED from C:\Users\ADMIN\Documents\Downloads\TeamAppAndroid\TeamAppAndroid\app\src\main\AndroidManifest.xml:62:15-59
+		ADDED from C:\Project\prm392-final\frontend\TeamAppAndroid (1)\TeamAppAndroid\app\src\main\AndroidManifest.xml:63:15-59
 activity#com.teamapp.ui.search.GlobalSearchActivity
-ADDED from C:\Users\ADMIN\Documents\Downloads\TeamAppAndroid\TeamAppAndroid\app\src\main\AndroidManifest.xml:63:5-89
+ADDED from C:\Project\prm392-final\frontend\TeamAppAndroid (1)\TeamAppAndroid\app\src\main\AndroidManifest.xml:64:5-89
 	android:exported
-		ADDED from C:\Users\ADMIN\Documents\Downloads\TeamAppAndroid\TeamAppAndroid\app\src\main\AndroidManifest.xml:63:62-86
+		ADDED from C:\Project\prm392-final\frontend\TeamAppAndroid (1)\TeamAppAndroid\app\src\main\AndroidManifest.xml:64:62-86
 	android:name
-		ADDED from C:\Users\ADMIN\Documents\Downloads\TeamAppAndroid\TeamAppAndroid\app\src\main\AndroidManifest.xml:63:15-61
+		ADDED from C:\Project\prm392-final\frontend\TeamAppAndroid (1)\TeamAppAndroid\app\src\main\AndroidManifest.xml:64:15-61
 service#com.teamapp.fcm.MyFirebaseService
-ADDED from C:\Users\ADMIN\Documents\Downloads\TeamAppAndroid\TeamAppAndroid\app\src\main\AndroidManifest.xml:68:5-74:15
+ADDED from C:\Project\prm392-final\frontend\TeamAppAndroid (1)\TeamAppAndroid\app\src\main\AndroidManifest.xml:69:5-75:15
 	android:exported
-		ADDED from C:\Users\ADMIN\Documents\Downloads\TeamAppAndroid\TeamAppAndroid\app\src\main\AndroidManifest.xml:70:9-33
+		ADDED from C:\Project\prm392-final\frontend\TeamAppAndroid (1)\TeamAppAndroid\app\src\main\AndroidManifest.xml:71:9-33
 	android:name
-		ADDED from C:\Users\ADMIN\Documents\Downloads\TeamAppAndroid\TeamAppAndroid\app\src\main\AndroidManifest.xml:69:9-46
+		ADDED from C:\Project\prm392-final\frontend\TeamAppAndroid (1)\TeamAppAndroid\app\src\main\AndroidManifest.xml:70:9-46
 intent-filter#action:name:com.google.firebase.MESSAGING_EVENT
-ADDED from C:\Users\ADMIN\Documents\Downloads\TeamAppAndroid\TeamAppAndroid\app\src\main\AndroidManifest.xml:71:9-73:25
+ADDED from C:\Project\prm392-final\frontend\TeamAppAndroid (1)\TeamAppAndroid\app\src\main\AndroidManifest.xml:72:9-74:25
 action#com.google.firebase.MESSAGING_EVENT
-ADDED from C:\Users\ADMIN\Documents\Downloads\TeamAppAndroid\TeamAppAndroid\app\src\main\AndroidManifest.xml:72:13-74
+ADDED from C:\Project\prm392-final\frontend\TeamAppAndroid (1)\TeamAppAndroid\app\src\main\AndroidManifest.xml:73:13-74
 	android:name
-		ADDED from C:\Users\ADMIN\Documents\Downloads\TeamAppAndroid\TeamAppAndroid\app\src\main\AndroidManifest.xml:72:21-71
+		ADDED from C:\Project\prm392-final\frontend\TeamAppAndroid (1)\TeamAppAndroid\app\src\main\AndroidManifest.xml:73:21-71
 meta-data#com.google.firebase.messaging.default_notification_icon
-ADDED from C:\Users\ADMIN\Documents\Downloads\TeamAppAndroid\TeamAppAndroid\app\src\main\AndroidManifest.xml:76:5-78:52
+ADDED from C:\Project\prm392-final\frontend\TeamAppAndroid (1)\TeamAppAndroid\app\src\main\AndroidManifest.xml:77:5-79:52
 	android:resource
-		ADDED from C:\Users\ADMIN\Documents\Downloads\TeamAppAndroid\TeamAppAndroid\app\src\main\AndroidManifest.xml:78:9-49
+		ADDED from C:\Project\prm392-final\frontend\TeamAppAndroid (1)\TeamAppAndroid\app\src\main\AndroidManifest.xml:79:9-49
 	android:name
-		ADDED from C:\Users\ADMIN\Documents\Downloads\TeamAppAndroid\TeamAppAndroid\app\src\main\AndroidManifest.xml:77:9-79
+		ADDED from C:\Project\prm392-final\frontend\TeamAppAndroid (1)\TeamAppAndroid\app\src\main\AndroidManifest.xml:78:9-79
 uses-sdk
-INJECTED from C:\Users\ADMIN\Documents\Downloads\TeamAppAndroid\TeamAppAndroid\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from C:\Users\ADMIN\Documents\Downloads\TeamAppAndroid\TeamAppAndroid\app\src\main\AndroidManifest.xml
-INJECTED from C:\Users\ADMIN\Documents\Downloads\TeamAppAndroid\TeamAppAndroid\app\src\main\AndroidManifest.xml
+INJECTED from C:\Project\prm392-final\frontend\TeamAppAndroid (1)\TeamAppAndroid\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Project\prm392-final\frontend\TeamAppAndroid (1)\TeamAppAndroid\app\src\main\AndroidManifest.xml
+INJECTED from C:\Project\prm392-final\frontend\TeamAppAndroid (1)\TeamAppAndroid\app\src\main\AndroidManifest.xml
 MERGED from [com.google.android.material:material:1.12.0] C:\Users\ADMIN\.gradle\caches\9.0-milestone-1\transforms\fa1cfffeb32a0625860f621cd89b29aa\transformed\material-1.12.0\AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.material:material:1.12.0] C:\Users\ADMIN\.gradle\caches\9.0-milestone-1\transforms\fa1cfffeb32a0625860f621cd89b29aa\transformed\material-1.12.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.constraintlayout:constraintlayout:2.2.0] C:\Users\ADMIN\.gradle\caches\9.0-milestone-1\transforms\83992258bff6738ab1332cb2a84ac170\transformed\constraintlayout-2.2.0\AndroidManifest.xml:5:5-44
@@ -457,9 +463,9 @@ MERGED from [androidx.sqlite:sqlite-android:2.5.0] C:\Users\ADMIN\.gradle\caches
 MERGED from [androidx.annotation:annotation-experimental:1.4.1] C:\Users\ADMIN\.gradle\caches\9.0-milestone-1\transforms\d5a63ec9838430a244da90171e1cf1ed\transformed\annotation-experimental-1.4.1\AndroidManifest.xml:5:5-44
 MERGED from [androidx.annotation:annotation-experimental:1.4.1] C:\Users\ADMIN\.gradle\caches\9.0-milestone-1\transforms\d5a63ec9838430a244da90171e1cf1ed\transformed\annotation-experimental-1.4.1\AndroidManifest.xml:5:5-44
 	android:targetSdkVersion
-		INJECTED from C:\Users\ADMIN\Documents\Downloads\TeamAppAndroid\TeamAppAndroid\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Project\prm392-final\frontend\TeamAppAndroid (1)\TeamAppAndroid\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from C:\Users\ADMIN\Documents\Downloads\TeamAppAndroid\TeamAppAndroid\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Project\prm392-final\frontend\TeamAppAndroid (1)\TeamAppAndroid\app\src\main\AndroidManifest.xml
 uses-permission#android.permission.WAKE_LOCK
 ADDED from [com.google.firebase:firebase-messaging:24.0.3] C:\Users\ADMIN\.gradle\caches\9.0-milestone-1\transforms\06fe9585686ae691e4e399ee2f65a858\transformed\firebase-messaging-24.0.3\AndroidManifest.xml:24:5-68
 MERGED from [com.google.android.gms:play-services-cloud-messaging:17.2.0] C:\Users\ADMIN\.gradle\caches\9.0-milestone-1\transforms\708b341286c2422e97c5c8c48b8da98d\transformed\play-services-cloud-messaging-17.2.0\AndroidManifest.xml:9:5-68

@@ -266,6 +266,32 @@
   },
   {
     "ContainingType": "TeamApp.Api.Controllers.JoinRequestsController",
+    "Method": "Get",
+    "RelativePath": "api/join-requests/{joinRequestId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "joinRequestId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "TeamApp.Application.JoinRequestDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "TeamApp.Api.Controllers.JoinRequestsController",
     "Method": "Decide",
     "RelativePath": "api/join-requests/{joinRequestId}/decision",
     "HttpMethod": "POST",
@@ -302,6 +328,83 @@
     "ReturnTypes": [
       {
         "Type": "TeamApp.Application.JoinRequestDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "TeamApp.Api.Controllers.JoinRequestsController",
+    "Method": "My",
+    "RelativePath": "api/join-requests/my",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "status",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "pageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "TeamApp.Application.PagedResult\u00601[[TeamApp.Application.JoinRequestDto, TeamApp.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "TeamApp.Api.Controllers.JoinRequestsController",
+    "Method": "ForProject",
+    "RelativePath": "api/join-requests/project/{projectId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "projectId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "status",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "pageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "TeamApp.Application.PagedResult\u00601[[TeamApp.Application.JoinRequestDto, TeamApp.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",

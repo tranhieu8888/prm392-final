@@ -577,6 +577,167 @@
         }
       }
     },
+    "/api/join-requests/my": {
+      "get": {
+        "tags": [
+          "JoinRequests"
+        ],
+        "parameters": [
+          {
+            "name": "status",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "page",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 1
+            }
+          },
+          {
+            "name": "pageSize",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 20
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/JoinRequestDtoPagedResult"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/JoinRequestDtoPagedResult"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/JoinRequestDtoPagedResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/join-requests/project/{projectId}": {
+      "get": {
+        "tags": [
+          "JoinRequests"
+        ],
+        "parameters": [
+          {
+            "name": "projectId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          },
+          {
+            "name": "status",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "page",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 1
+            }
+          },
+          {
+            "name": "pageSize",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 20
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/JoinRequestDtoPagedResult"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/JoinRequestDtoPagedResult"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/JoinRequestDtoPagedResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/join-requests/{joinRequestId}": {
+      "get": {
+        "tags": [
+          "JoinRequests"
+        ],
+        "parameters": [
+          {
+            "name": "joinRequestId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/JoinRequestDto"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/JoinRequestDto"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/JoinRequestDto"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/api/conversations/{conversationId}/messages": {
       "get": {
         "tags": [
@@ -1597,6 +1758,33 @@
           "createdAt": {
             "type": "string",
             "format": "date-time"
+          },
+          "processedAt": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "processedBy": {
+            "type": "string",
+            "format": "uuid",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "JoinRequestDtoPagedResult": {
+        "type": "object",
+        "properties": {
+          "total": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "items": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/JoinRequestDto"
+            },
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -1964,7 +2152,7 @@
     "securitySchemes": {
       "Bearer": {
         "type": "http",
-        "description": "Nhập token theo dạng: Bearer {token}",
+        "description": "Bearer {token}",
         "scheme": "bearer",
         "bearerFormat": "JWT"
       }

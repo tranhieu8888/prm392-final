@@ -1,1 +1,28 @@
-backend/TeamApp.Api/.vs/
+# ===== Visual Studio / VSCode =====
+.vs/
+.vscode/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.vsidx
+*.dbmdl
+*.bak
+*.backup.json
+*.cache
+*.wsuo
+
+# ===== Build / bin / obj =====
+[Bb]in/
+[Oo]bj/
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+*.log
+*.tlog
+
+# ===== Others =====
+*.DS_Store
+Thumbs.db
+*.swp

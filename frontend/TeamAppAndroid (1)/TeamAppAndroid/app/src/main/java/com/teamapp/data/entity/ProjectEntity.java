@@ -18,5 +18,6 @@ public class ProjectEntity {
     public String name;
     public String description;
     public boolean isPublic;
+    public String status;   // "TODO","DOING","REVIEW","DONE"
     public Date createdAt;
 }

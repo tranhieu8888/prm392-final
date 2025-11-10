@@ -58,6 +58,9 @@
         <activity
             android:name="com.teamapp.ui.auth.RegisterActivity"
             android:exported="false" />
+        <activity
+            android:name="com.teamapp.ui.main.MainActivity"
+            android:exported="false" />
 
         <!-- Projects -->
         <activity

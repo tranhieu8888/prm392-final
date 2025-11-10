@@ -52,7 +52,7 @@ import com.teamapp.data.entity.UserEntity;
                 UserEntity.class,
 
         },
-        version = 1,
+        version = 2,
         exportSchema = false
 )
 @TypeConverters(DateConverters.class)

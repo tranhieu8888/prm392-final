@@ -30,7 +30,16 @@ namespace TeamApp.Application
     public record AddCommentRequest(string Content);
 
     // ===== Join Requests =====
-    public record JoinRequestDto(Guid Id, Guid ProjectId, Guid RequesterId, string Status, DateTime CreatedAt);
+    public record JoinRequestDto(
+    Guid Id,
+    Guid ProjectId,
+    Guid RequesterId,
+    string Status,
+    DateTime CreatedAt,
+    DateTime? ProcessedAt,
+    Guid? ProcessedBy
+);
+    public record PagedResult<T>(int Total, IReadOnlyList<T> Items);
     public record ApproveJoinRequestRequest(bool Approve);
 
     // ===== Notifications =====
