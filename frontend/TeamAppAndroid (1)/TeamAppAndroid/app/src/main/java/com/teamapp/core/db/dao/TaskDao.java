@@ -66,7 +66,7 @@ public interface TaskDao {
         public String title;
         public String description;
         public String status;
-        public double position;
+        public Double position;
         public Date dueDate;
         public Date updatedAt;
         @ColumnInfo(name = "projectName")
