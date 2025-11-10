@@ -77,11 +77,11 @@ public class RegisterActivity extends AppCompatActivity {
             return;
         }
 
-        // 3. Kiểm tra định dạng email (BỔ SUNG)
         if (!android.util.Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
             Toast.makeText(this, "Định dạng email không hợp lệ", Toast.LENGTH_SHORT).show();
             return;
         }
+
 
         progress.setVisibility(View.VISIBLE);
         btnRegister.setEnabled(false);
