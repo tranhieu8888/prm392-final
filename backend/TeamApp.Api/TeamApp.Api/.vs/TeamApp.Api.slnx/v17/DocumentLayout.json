@@ -1,22 +1,54 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\TeamApp.Api\\",
+  "WorkspaceRootPath": "C:\\Users\\nguye\\Downloads\\prm392-final\\backend\\TeamApp.Api\\TeamApp.Api\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5F19645F-9DE1-DF6B-168F-13779CD08C25}|TeamApp.Domain\\TeamApp.Domain.csproj|c:\\teamapp.api\\teamapp.domain\\teamapp.domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{5F19645F-9DE1-DF6B-168F-13779CD08C25}|TeamApp.Domain\\TeamApp.Domain.csproj|solutionrelative:teamapp.domain\\teamapp.domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{440E7FF3-BA61-423A-BB01-56C60D1D8635}|TeamApp.Application\\TeamApp.Application.csproj|c:\\users\\nguye\\downloads\\prm392-final\\backend\\teamapp.api\\teamapp.api\\teamapp.application\\messageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{440E7FF3-BA61-423A-BB01-56C60D1D8635}|TeamApp.Application\\TeamApp.Application.csproj|solutionrelative:teamapp.application\\messageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{25824BB7-24EA-83CB-57CB-662D5F743D1E}|TeamApp.Application\\TeamApp.Application.csproj|c:\\teamapp.api\\teamapp.application\\teamapp.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{25824BB7-24EA-83CB-57CB-662D5F743D1E}|TeamApp.Application\\TeamApp.Application.csproj|solutionrelative:teamapp.application\\teamapp.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{A9F2E9D9-E0E4-ED93-EDCB-97BD236A2F2F}|TeamApp.Api\\TeamApp.Api.csproj|c:\\users\\nguye\\downloads\\prm392-final\\backend\\teamapp.api\\teamapp.api\\teamapp.api\\controllers\\messagescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A9F2E9D9-E0E4-ED93-EDCB-97BD236A2F2F}|TeamApp.Api\\TeamApp.Api.csproj|solutionrelative:teamapp.api\\controllers\\messagescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A9F2E9D9-E0E4-ED93-EDCB-97BD236A2F2F}|TeamApp.Api\\TeamApp.Api.csproj|c:\\teamapp.api\\teamapp.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A9F2E9D9-E0E4-ED93-EDCB-97BD236A2F2F}|TeamApp.Api\\TeamApp.Api.csproj|c:\\users\\nguye\\downloads\\prm392-final\\backend\\teamapp.api\\teamapp.api\\teamapp.api\\controllers\\conversationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A9F2E9D9-E0E4-ED93-EDCB-97BD236A2F2F}|TeamApp.Api\\TeamApp.Api.csproj|solutionrelative:teamapp.api\\controllers\\conversationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A9F2E9D9-E0E4-ED93-EDCB-97BD236A2F2F}|TeamApp.Api\\TeamApp.Api.csproj|c:\\users\\nguye\\downloads\\prm392-final\\backend\\teamapp.api\\teamapp.api\\teamapp.api\\realtime\\signalrrealtimenotifier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A9F2E9D9-E0E4-ED93-EDCB-97BD236A2F2F}|TeamApp.Api\\TeamApp.Api.csproj|solutionrelative:teamapp.api\\realtime\\signalrrealtimenotifier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A9F2E9D9-E0E4-ED93-EDCB-97BD236A2F2F}|TeamApp.Api\\TeamApp.Api.csproj|c:\\users\\nguye\\downloads\\prm392-final\\backend\\teamapp.api\\teamapp.api\\teamapp.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A9F2E9D9-E0E4-ED93-EDCB-97BD236A2F2F}|TeamApp.Api\\TeamApp.Api.csproj|solutionrelative:teamapp.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{440E7FF3-BA61-423A-BB01-56C60D1D8635}|TeamApp.Application\\TeamApp.Application.csproj|c:\\users\\nguye\\downloads\\prm392-final\\backend\\teamapp.api\\teamapp.api\\teamapp.application\\searchservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{440E7FF3-BA61-423A-BB01-56C60D1D8635}|TeamApp.Application\\TeamApp.Application.csproj|solutionrelative:teamapp.application\\searchservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{440E7FF3-BA61-423A-BB01-56C60D1D8635}|TeamApp.Application\\TeamApp.Application.csproj|c:\\users\\nguye\\downloads\\prm392-final\\backend\\teamapp.api\\teamapp.api\\teamapp.application\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{440E7FF3-BA61-423A-BB01-56C60D1D8635}|TeamApp.Application\\TeamApp.Application.csproj|solutionrelative:teamapp.application\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{440E7FF3-BA61-423A-BB01-56C60D1D8635}|TeamApp.Application\\TeamApp.Application.csproj|c:\\users\\nguye\\downloads\\prm392-final\\backend\\teamapp.api\\teamapp.api\\teamapp.application\\jwtkeyhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{440E7FF3-BA61-423A-BB01-56C60D1D8635}|TeamApp.Application\\TeamApp.Application.csproj|solutionrelative:teamapp.application\\jwtkeyhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A9F2E9D9-E0E4-ED93-EDCB-97BD236A2F2F}|TeamApp.Api\\TeamApp.Api.csproj|c:\\users\\nguye\\downloads\\prm392-final\\backend\\teamapp.api\\teamapp.api\\teamapp.api\\hubs\\chathub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A9F2E9D9-E0E4-ED93-EDCB-97BD236A2F2F}|TeamApp.Api\\TeamApp.Api.csproj|solutionrelative:teamapp.api\\hubs\\chathub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A9F2E9D9-E0E4-ED93-EDCB-97BD236A2F2F}|TeamApp.Api\\TeamApp.Api.csproj|c:\\users\\nguye\\downloads\\prm392-final\\backend\\teamapp.api\\teamapp.api\\teamapp.api\\teamapp.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{A9F2E9D9-E0E4-ED93-EDCB-97BD236A2F2F}|TeamApp.Api\\TeamApp.Api.csproj|solutionrelative:teamapp.api\\teamapp.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A9F2E9D9-E0E4-ED93-EDCB-97BD236A2F2F}|TeamApp.Api\\TeamApp.Api.csproj|c:\\users\\nguye\\downloads\\prm392-final\\backend\\teamapp.api\\teamapp.api\\teamapp.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A9F2E9D9-E0E4-ED93-EDCB-97BD236A2F2F}|TeamApp.Api\\TeamApp.Api.csproj|solutionrelative:teamapp.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A9F2E9D9-E0E4-ED93-EDCB-97BD236A2F2F}|TeamApp.Api\\TeamApp.Api.csproj|c:\\teamapp.api\\teamapp.api\\teamapp.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{A9F2E9D9-E0E4-ED93-EDCB-97BD236A2F2F}|TeamApp.Api\\TeamApp.Api.csproj|solutionrelative:teamapp.api\\teamapp.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{440E7FF3-BA61-423A-BB01-56C60D1D8635}|TeamApp.Application\\TeamApp.Application.csproj|c:\\users\\nguye\\downloads\\prm392-final\\backend\\teamapp.api\\teamapp.api\\teamapp.application\\teamapp.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{440E7FF3-BA61-423A-BB01-56C60D1D8635}|TeamApp.Application\\TeamApp.Application.csproj|solutionrelative:teamapp.application\\teamapp.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,8 +58,16 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 16,
+          "SelectedChildIndex": 19,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{dee22b65-9761-4a26-8fb2-759b971d6dfc}"
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:132:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
@@ -89,60 +129,166 @@
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ConversationsController.cs",
+              "DocumentMoniker": "C:\\Users\\nguye\\Downloads\\prm392-final\\backend\\TeamApp.Api\\TeamApp.Api\\TeamApp.Api\\Controllers\\ConversationsController.cs",
+              "RelativeDocumentMoniker": "TeamApp.Api\\Controllers\\ConversationsController.cs",
+              "ToolTip": "C:\\Users\\nguye\\Downloads\\prm392-final\\backend\\TeamApp.Api\\TeamApp.Api\\TeamApp.Api\\Controllers\\ConversationsController.cs",
+              "RelativeToolTip": "TeamApp.Api\\Controllers\\ConversationsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-12T06:20:59.083Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "SearchService.cs",
+              "DocumentMoniker": "C:\\Users\\nguye\\Downloads\\prm392-final\\backend\\TeamApp.Api\\TeamApp.Api\\TeamApp.Application\\SearchService.cs",
+              "RelativeDocumentMoniker": "TeamApp.Application\\SearchService.cs",
+              "ToolTip": "C:\\Users\\nguye\\Downloads\\prm392-final\\backend\\TeamApp.Api\\TeamApp.Api\\TeamApp.Application\\SearchService.cs",
+              "RelativeToolTip": "TeamApp.Application\\SearchService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-12T06:17:12.565Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "TeamApp.Domain",
-              "DocumentMoniker": "C:\\TeamApp.Api\\TeamApp.Domain\\TeamApp.Domain.csproj",
-              "RelativeDocumentMoniker": "TeamApp.Domain\\TeamApp.Domain.csproj",
-              "ToolTip": "C:\\TeamApp.Api\\TeamApp.Domain\\TeamApp.Domain.csproj",
-              "RelativeToolTip": "TeamApp.Domain\\TeamApp.Domain.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAABIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-11-08T13:13:30.215Z",
+              "Title": "MessageService.cs",
+              "DocumentMoniker": "C:\\Users\\nguye\\Downloads\\prm392-final\\backend\\TeamApp.Api\\TeamApp.Api\\TeamApp.Application\\MessageService.cs",
+              "RelativeDocumentMoniker": "TeamApp.Application\\MessageService.cs",
+              "ToolTip": "C:\\Users\\nguye\\Downloads\\prm392-final\\backend\\TeamApp.Api\\TeamApp.Api\\TeamApp.Application\\MessageService.cs*",
+              "RelativeToolTip": "TeamApp.Application\\MessageService.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEwAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-11T21:24:17.507Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\nguye\\Downloads\\prm392-final\\backend\\TeamApp.Api\\TeamApp.Api\\TeamApp.Api\\appsettings.json",
+              "RelativeDocumentMoniker": "TeamApp.Api\\appsettings.json",
+              "ToolTip": "C:\\Users\\nguye\\Downloads\\prm392-final\\backend\\TeamApp.Api\\TeamApp.Api\\TeamApp.Api\\appsettings.json",
+              "RelativeToolTip": "TeamApp.Api\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-11-11T19:00:08.311Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "TeamApp.Application",
-              "DocumentMoniker": "C:\\TeamApp.Api\\TeamApp.Application\\TeamApp.Application.csproj",
-              "RelativeDocumentMoniker": "TeamApp.Application\\TeamApp.Application.csproj",
-              "ToolTip": "C:\\TeamApp.Api\\TeamApp.Application\\TeamApp.Application.csproj",
-              "RelativeToolTip": "TeamApp.Application\\TeamApp.Application.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-11-08T13:13:27.057Z",
+              "Title": "MessagesController.cs",
+              "DocumentMoniker": "C:\\Users\\nguye\\Downloads\\prm392-final\\backend\\TeamApp.Api\\TeamApp.Api\\TeamApp.Api\\Controllers\\MessagesController.cs",
+              "RelativeDocumentMoniker": "TeamApp.Api\\Controllers\\MessagesController.cs",
+              "ToolTip": "C:\\Users\\nguye\\Downloads\\prm392-final\\backend\\TeamApp.Api\\TeamApp.Api\\TeamApp.Api\\Controllers\\MessagesController.cs",
+              "RelativeToolTip": "TeamApp.Api\\Controllers\\MessagesController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-11T20:58:01.901Z",
               "EditorCaption": ""
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AuthController.cs",
-              "DocumentMoniker": "C:\\TeamApp.Api\\TeamApp.Api\\Controllers\\AuthController.cs",
-              "RelativeDocumentMoniker": "TeamApp.Api\\Controllers\\AuthController.cs",
-              "ToolTip": "C:\\TeamApp.Api\\TeamApp.Api\\Controllers\\AuthController.cs",
-              "RelativeToolTip": "TeamApp.Api\\Controllers\\AuthController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-08T13:12:52.46Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:26:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "TeamApp.Api",
-              "DocumentMoniker": "C:\\TeamApp.Api\\TeamApp.Api\\TeamApp.Api.csproj",
+              "Title": "SignalRRealtimeNotifier.cs",
+              "DocumentMoniker": "C:\\Users\\nguye\\Downloads\\prm392-final\\backend\\TeamApp.Api\\TeamApp.Api\\TeamApp.Api\\Realtime\\SignalRRealtimeNotifier.cs",
+              "RelativeDocumentMoniker": "TeamApp.Api\\Realtime\\SignalRRealtimeNotifier.cs",
+              "ToolTip": "C:\\Users\\nguye\\Downloads\\prm392-final\\backend\\TeamApp.Api\\TeamApp.Api\\TeamApp.Api\\Realtime\\SignalRRealtimeNotifier.cs",
+              "RelativeToolTip": "TeamApp.Api\\Realtime\\SignalRRealtimeNotifier.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-11T20:57:43.691Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ChatHub.cs",
+              "DocumentMoniker": "C:\\Users\\nguye\\Downloads\\prm392-final\\backend\\TeamApp.Api\\TeamApp.Api\\TeamApp.Api\\Hubs\\ChatHub.cs",
+              "RelativeDocumentMoniker": "TeamApp.Api\\Hubs\\ChatHub.cs",
+              "ToolTip": "C:\\Users\\nguye\\Downloads\\prm392-final\\backend\\TeamApp.Api\\TeamApp.Api\\TeamApp.Api\\Hubs\\ChatHub.cs",
+              "RelativeToolTip": "TeamApp.Api\\Hubs\\ChatHub.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-11T20:57:53.712Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "JwtKeyHelper.cs",
+              "DocumentMoniker": "C:\\Users\\nguye\\Downloads\\prm392-final\\backend\\TeamApp.Api\\TeamApp.Api\\TeamApp.Application\\JwtKeyHelper.cs",
+              "RelativeDocumentMoniker": "TeamApp.Application\\JwtKeyHelper.cs",
+              "ToolTip": "C:\\Users\\nguye\\Downloads\\prm392-final\\backend\\TeamApp.Api\\TeamApp.Api\\TeamApp.Application\\JwtKeyHelper.cs",
+              "RelativeToolTip": "TeamApp.Application\\JwtKeyHelper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-11T20:58:15.832Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "C:\\Users\\nguye\\Downloads\\prm392-final\\backend\\TeamApp.Api\\TeamApp.Api\\TeamApp.Application\\AuthService.cs",
+              "RelativeDocumentMoniker": "TeamApp.Application\\AuthService.cs",
+              "ToolTip": "C:\\Users\\nguye\\Downloads\\prm392-final\\backend\\TeamApp.Api\\TeamApp.Api\\TeamApp.Application\\AuthService.cs",
+              "RelativeToolTip": "TeamApp.Application\\AuthService.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAIwC4AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-11T19:13:44.036Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "TeamApp.Application.csproj",
+              "DocumentMoniker": "C:\\Users\\nguye\\Downloads\\prm392-final\\backend\\TeamApp.Api\\TeamApp.Api\\TeamApp.Application\\TeamApp.Application.csproj",
+              "RelativeDocumentMoniker": "TeamApp.Application\\TeamApp.Application.csproj",
+              "ToolTip": "C:\\Users\\nguye\\Downloads\\prm392-final\\backend\\TeamApp.Api\\TeamApp.Api\\TeamApp.Application\\TeamApp.Application.csproj",
+              "RelativeToolTip": "TeamApp.Application\\TeamApp.Application.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-11-08T13:13:27.057Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\nguye\\Downloads\\prm392-final\\backend\\TeamApp.Api\\TeamApp.Api\\TeamApp.Api\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "TeamApp.Api\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\nguye\\Downloads\\prm392-final\\backend\\TeamApp.Api\\TeamApp.Api\\TeamApp.Api\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "TeamApp.Api\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-08T13:12:52.46Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "TeamApp.Api.csproj",
+              "DocumentMoniker": "C:\\Users\\nguye\\Downloads\\prm392-final\\backend\\TeamApp.Api\\TeamApp.Api\\TeamApp.Api\\TeamApp.Api.csproj",
               "RelativeDocumentMoniker": "TeamApp.Api\\TeamApp.Api.csproj",
-              "ToolTip": "C:\\TeamApp.Api\\TeamApp.Api\\TeamApp.Api.csproj",
+              "ToolTip": "C:\\Users\\nguye\\Downloads\\prm392-final\\backend\\TeamApp.Api\\TeamApp.Api\\TeamApp.Api\\TeamApp.Api.csproj",
               "RelativeToolTip": "TeamApp.Api\\TeamApp.Api.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-11-08T13:12:03.347Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-08T13:12:03.347Z"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             }
           ]
         }
